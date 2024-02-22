@@ -8,6 +8,9 @@ using ObjectOrientedPractics.Services;
 
 namespace ObjectOrientedPractics.Model
 {
+    /// <summary>
+    /// Класс Товара
+    /// </summary>
     internal class Item
     {
         private static int _count = 0;
@@ -18,6 +21,14 @@ namespace ObjectOrientedPractics.Model
         private float _cost;
 
         ValueValidator Validator = new ValueValidator();
+        
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <param name="name">Наименование</param>
+        /// <param name="info">Описание</param>
+        /// <param name="cost">Цена</param>
         public Item(string name, string info, float cost)
         {
             Name = name;
@@ -25,6 +36,9 @@ namespace ObjectOrientedPractics.Model
             Cost = cost;
         }
 
+        /// <summary>
+        /// Свойство Id
+        /// </summary>
         public int Id
         {
             get
@@ -33,6 +47,9 @@ namespace ObjectOrientedPractics.Model
             }
         }
 
+        /// <summary>
+        /// Свойство наименования
+        /// </summary>
         public string Name
         {
             set
@@ -45,6 +62,9 @@ namespace ObjectOrientedPractics.Model
             }
         }
 
+        /// <summary>
+        /// Свойство описания
+        /// </summary>
         public string Info
         {
             set
@@ -57,6 +77,9 @@ namespace ObjectOrientedPractics.Model
             }
         }
 
+        /// <summary>
+        /// Свойство цены
+        /// </summary>
         public float Cost
         {
             set

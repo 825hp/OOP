@@ -8,6 +8,9 @@ using ObjectOrientedPractics.Services;
 
 namespace ObjectOrientedPractics.Model
 {
+    /// <summary>
+    /// Класс Покупателя
+    /// </summary>
     internal class Customer
     {
         private static int _count = 0;
@@ -17,12 +20,22 @@ namespace ObjectOrientedPractics.Model
         private string _address;
 
         ValueValidator Validator = new ValueValidator();
+
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <param name="fullname">ФИО</param>
+        /// <param name="address">Адрес</param>
         public Customer(string fullname, string address)
         {
             Fullname = fullname;
             Address = address;
         }
 
+        /// <summary>
+        /// Свойство Id
+        /// </summary>
         public int Id
         {
             get
@@ -31,6 +44,9 @@ namespace ObjectOrientedPractics.Model
             }
         }
 
+        /// <summary>
+        /// Свойство ФИО
+        /// </summary>
         public string Fullname
         {
             set
@@ -43,6 +59,9 @@ namespace ObjectOrientedPractics.Model
             }
         }
 
+        /// <summary>
+        /// Свойство Адреса
+        /// </summary>
         public string Address
         {
             set

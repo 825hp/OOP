@@ -9,3 +9,4 @@ C:\Users\Stepan\Desktop\OOP\src\ObjectOrientedPractics\ObjectOrientedPractics\ob
 C:\Users\Stepan\Desktop\OOP\src\ObjectOrientedPractics\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.exe
 C:\Users\Stepan\Desktop\OOP\src\ObjectOrientedPractics\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.pdb
 C:\Users\Stepan\Desktop\OOP\src\ObjectOrientedPractics\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.MainForm.resources
+C:\Users\Stepan\Desktop\OOP\src\ObjectOrientedPractics\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.Customers.resources

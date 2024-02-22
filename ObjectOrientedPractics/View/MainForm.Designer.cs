@@ -32,8 +32,10 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.itemsTab1 = new ObjectOrientedPractics.View.Tabs.ItemsTab();
+            this.customers1 = new ObjectOrientedPractics.View.Tabs.Customers();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -60,10 +62,11 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.customers1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(946, 620);
+            this.tabPage2.Size = new System.Drawing.Size(946, 809);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Customers";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -76,6 +79,14 @@
             this.itemsTab1.Size = new System.Drawing.Size(940, 803);
             this.itemsTab1.TabIndex = 0;
             // 
+            // customers1
+            // 
+            this.customers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customers1.Location = new System.Drawing.Point(3, 3);
+            this.customers1.Name = "customers1";
+            this.customers1.Size = new System.Drawing.Size(940, 803);
+            this.customers1.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -86,6 +97,7 @@
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -96,6 +108,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private View.Tabs.ItemsTab itemsTab1;
+        private View.Tabs.Customers customers1;
     }
 }
 

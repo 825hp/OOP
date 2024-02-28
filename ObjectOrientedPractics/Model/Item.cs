@@ -13,15 +13,17 @@ namespace ObjectOrientedPractics.Model
     /// </summary>
     internal class Item
     {
-        private static int _count = 0;
-
+        private static int _count = 1;
         private readonly int _id = _count++;
+
         private string _name;
         private string _info;
         private float _cost;
+        
+
 
         ValueValidator Validator = new ValueValidator();
-        
+
         /// <summary>
         /// Конструктор класса
         /// </summary>
@@ -36,11 +38,14 @@ namespace ObjectOrientedPractics.Model
             Cost = cost;
         }
 
+        
+            
         /// <summary>
         /// Свойство Id
         /// </summary>
         public int Id
         {
+            
             get
             {
                 return _id;
@@ -54,7 +59,9 @@ namespace ObjectOrientedPractics.Model
         {
             set
             {
-                _name = Validator.AssertStringOnLength(value, 200, Name);
+                _name = Validator.AssertStringOnLength(value, 200, "Name");
+                
+
             }
             get
             {
@@ -69,7 +76,7 @@ namespace ObjectOrientedPractics.Model
         {
             set
             {
-                _info = Validator.AssertStringOnLength(value, 1000, Info);
+                _info = Validator.AssertStringOnLength(value, 1000, "Info" );
             }
             get
             {
@@ -84,13 +91,16 @@ namespace ObjectOrientedPractics.Model
         {
             set
             {
-                if (value <0 || value > 100000)
+                if (value >=0 && value < 100000)
                 {
-                    throw new ArgumentException("Your price is wrong, check it");
+                    _cost = value;
+                           
+                    
                 }
                 else
                 {
-                    _cost = value; 
+                    
+                    throw new ArgumentException("Your price is wrong, check it");
                 }
             }
             get

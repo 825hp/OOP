@@ -30,21 +30,22 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label_Error = new System.Windows.Forms.Label();
+            this.textBox_Cost = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_ID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_Name = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Description = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox_Items = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
+            this.Remove = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -69,26 +70,36 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.label_Error);
+            this.panel3.Controls.Add(this.textBox_Cost);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.textBox_ID);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.textBox_Name);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.textBox_Description);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(296, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(366, 544);
             this.panel3.TabIndex = 1;
             // 
-            // textBox4
+            // label_Error
             // 
-            this.textBox4.Location = new System.Drawing.Point(47, 72);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(117, 20);
-            this.textBox4.TabIndex = 8;
+            this.label_Error.AutoSize = true;
+            this.label_Error.Location = new System.Drawing.Point(240, 57);
+            this.label_Error.Name = "label_Error";
+            this.label_Error.Size = new System.Drawing.Size(0, 13);
+            this.label_Error.TabIndex = 1;
+            // 
+            // textBox_Cost
+            // 
+            this.textBox_Cost.Location = new System.Drawing.Point(47, 72);
+            this.textBox_Cost.Name = "textBox_Cost";
+            this.textBox_Cost.Size = new System.Drawing.Size(117, 20);
+            this.textBox_Cost.TabIndex = 8;
+            this.textBox_Cost.TextChanged += new System.EventHandler(this.textBox_Cost_TextChanged);
             // 
             // label6
             // 
@@ -99,12 +110,13 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Cost:";
             // 
-            // textBox3
+            // textBox_ID
             // 
-            this.textBox3.Location = new System.Drawing.Point(47, 41);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(117, 20);
-            this.textBox3.TabIndex = 6;
+            this.textBox_ID.Location = new System.Drawing.Point(47, 41);
+            this.textBox_ID.Name = "textBox_ID";
+            this.textBox_ID.ReadOnly = true;
+            this.textBox_ID.Size = new System.Drawing.Size(117, 20);
+            this.textBox_ID.TabIndex = 6;
             // 
             // label5
             // 
@@ -124,15 +136,16 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Name:";
             // 
-            // textBox2
+            // textBox_Name
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(3, 135);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(360, 77);
-            this.textBox2.TabIndex = 3;
+            this.textBox_Name.Location = new System.Drawing.Point(3, 135);
+            this.textBox_Name.Multiline = true;
+            this.textBox_Name.Name = "textBox_Name";
+            this.textBox_Name.Size = new System.Drawing.Size(360, 77);
+            this.textBox_Name.TabIndex = 3;
+            this.textBox_Name.TextChanged += new System.EventHandler(this.textBox_Name_TextChanged);
             // 
             // label3
             // 
@@ -143,16 +156,17 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Description:";
             // 
-            // textBox1
+            // textBox_Description
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBox_Description.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(3, 244);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(360, 144);
-            this.textBox1.TabIndex = 1;
+            this.textBox_Description.Location = new System.Drawing.Point(3, 244);
+            this.textBox_Description.Multiline = true;
+            this.textBox_Description.Name = "textBox_Description";
+            this.textBox_Description.Size = new System.Drawing.Size(360, 144);
+            this.textBox_Description.TabIndex = 1;
+            this.textBox_Description.TextChanged += new System.EventHandler(this.textBox_Description_TextChanged);
             // 
             // label2
             // 
@@ -169,7 +183,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.listBox1);
+            this.panel2.Controls.Add(this.listBox_Items);
             this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
@@ -186,15 +200,16 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Items";
             // 
-            // listBox1
+            // listBox_Items
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.listBox_Items.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(3, 26);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(281, 459);
-            this.listBox1.TabIndex = 2;
+            this.listBox_Items.FormattingEnabled = true;
+            this.listBox_Items.Location = new System.Drawing.Point(3, 26);
+            this.listBox_Items.Name = "listBox_Items";
+            this.listBox_Items.Size = new System.Drawing.Size(281, 459);
+            this.listBox_Items.TabIndex = 2;
+            this.listBox_Items.SelectedIndexChanged += new System.EventHandler(this.listBox_Items_SelectedIndexChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -203,35 +218,36 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Add, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Remove, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 487);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(281, 54);
             this.tableLayoutPanel1.TabIndex = 2;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // button1
+            // Add
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 48);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Add.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Add.Location = new System.Drawing.Point(3, 3);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(87, 48);
+            this.Add.TabIndex = 1;
+            this.Add.Text = "Add";
+            this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // button2
+            // Remove
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.Location = new System.Drawing.Point(96, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 48);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Remove.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Remove.Location = new System.Drawing.Point(96, 3);
+            this.Remove.Name = "Remove";
+            this.Remove.Size = new System.Drawing.Size(87, 48);
+            this.Remove.TabIndex = 2;
+            this.Remove.Text = "Remove";
+            this.Remove.UseVisualStyleBackColor = true;
+            this.Remove.Click += new System.EventHandler(this.Remove_Click);
             // 
             // ItemsTab
             // 
@@ -256,18 +272,19 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox_Items;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Button Remove;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Description;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_Cost;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_ID;
+        private System.Windows.Forms.Label label_Error;
     }
 }

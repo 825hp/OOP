@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ObjectOrientedPractics.Services
@@ -22,14 +23,10 @@ namespace ObjectOrientedPractics.Services
 
         public string AssertStringOnLength(string value, int maxLength, string propertyName)
         {
-            if (value == null || value == "")
+            if (value.Length > maxLength)
             {
-                throw new ArgumentException($"{propertyName} должен быть не пустым");
-
-            }
-            else if (value.Length > maxLength)
-            {
-                throw new ArgumentException($"{propertyName} должен быть не пустым");
+                
+                throw new ArgumentException($"{propertyName} превышен лимит");
             }
             else
             {

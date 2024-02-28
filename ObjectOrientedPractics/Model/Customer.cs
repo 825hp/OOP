@@ -15,7 +15,7 @@ namespace ObjectOrientedPractics.Model
     {
         private static int _count = 0;
 
-        private readonly int _id = _count++;
+        private readonly int _id = _count;
         private string _fullname;
         private string _address;
 
@@ -51,7 +51,7 @@ namespace ObjectOrientedPractics.Model
         {
             set
             {
-                _fullname = Validator.AssertStringOnLength(value, 200, Fullname);
+                _fullname = Validator.AssertStringOnLength(value, 200, "Fullname");
             }
             get
             {
@@ -66,7 +66,8 @@ namespace ObjectOrientedPractics.Model
         {
             set
             {
-                _address = Validator.AssertStringOnLength(value, 500, Address);
+                _address = Validator.AssertStringOnLength(value, 500, "Address");
+                
             }
             get
             {

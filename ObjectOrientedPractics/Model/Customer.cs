@@ -13,9 +13,9 @@ namespace ObjectOrientedPractics.Model
     /// </summary>
     internal class Customer
     {
-        private static int _count = 0;
+        private static int _count = 1;
+        private readonly int _id = _count++;
 
-        private readonly int _id = _count;
         private string _fullname;
         private string _address;
 

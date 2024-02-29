@@ -29,26 +29,27 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBox_Address = new System.Windows.Forms.TextBox();
+            this.textBox_FullName = new System.Windows.Forms.TextBox();
+            this.textBox_ID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.listBox_Customers = new System.Windows.Forms.ListBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button_Remove = new System.Windows.Forms.Button();
+            this.button_Add = new System.Windows.Forms.Button();
+            this.label_Error = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,18 +65,6 @@
             this.panel1.Size = new System.Drawing.Size(690, 547);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.listBox1);
-            this.panel2.Controls.Add(this.tableLayoutPanel1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(306, 541);
-            this.panel2.TabIndex = 0;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -89,25 +78,15 @@
             this.panel3.Size = new System.Drawing.Size(372, 541);
             this.panel3.TabIndex = 0;
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Location = new System.Drawing.Point(3, 203);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(366, 335);
-            this.panel4.TabIndex = 1;
-            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.textBox2);
-            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.label_Error);
+            this.panel5.Controls.Add(this.textBox_Address);
+            this.panel5.Controls.Add(this.textBox_FullName);
+            this.panel5.Controls.Add(this.textBox_ID);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
@@ -117,63 +96,65 @@
             this.panel5.Size = new System.Drawing.Size(366, 194);
             this.panel5.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // textBox_Address
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 492);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(303, 46);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.textBox_Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Address.BackColor = System.Drawing.Color.White;
+            this.textBox_Address.Location = new System.Drawing.Point(60, 96);
+            this.textBox_Address.Multiline = true;
+            this.textBox_Address.Name = "textBox_Address";
+            this.textBox_Address.ReadOnly = true;
+            this.textBox_Address.Size = new System.Drawing.Size(303, 95);
+            this.textBox_Address.TabIndex = 6;
+            this.textBox_Address.TextChanged += new System.EventHandler(this.textBox_Address_TextChanged);
             // 
-            // listBox1
+            // textBox_FullName
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(3, 29);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(300, 459);
-            this.listBox1.TabIndex = 1;
+            this.textBox_FullName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_FullName.BackColor = System.Drawing.Color.White;
+            this.textBox_FullName.Location = new System.Drawing.Point(60, 68);
+            this.textBox_FullName.Name = "textBox_FullName";
+            this.textBox_FullName.ReadOnly = true;
+            this.textBox_FullName.Size = new System.Drawing.Size(303, 20);
+            this.textBox_FullName.TabIndex = 5;
+            this.textBox_FullName.TextChanged += new System.EventHandler(this.textBox_FullName_TextChanged);
             // 
-            // label1
+            // textBox_ID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(3, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Customers";
+            this.textBox_ID.Location = new System.Drawing.Point(60, 35);
+            this.textBox_ID.Name = "textBox_ID";
+            this.textBox_ID.ReadOnly = true;
+            this.textBox_ID.Size = new System.Drawing.Size(100, 20);
+            this.textBox_ID.TabIndex = 4;
             // 
-            // button1
+            // label5
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Address:";
             // 
-            // button2
+            // label4
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Location = new System.Drawing.Point(106, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Full Name:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "ID:";
             // 
             // label2
             // 
@@ -185,58 +166,98 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Selected Customer";
             // 
-            // label3
+            // panel4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "ID:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Full Name:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 96);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Address:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(60, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(60, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(303, 20);
-            this.textBox2.TabIndex = 5;
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Location = new System.Drawing.Point(3, 203);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(366, 335);
+            this.panel4.TabIndex = 1;
             // 
-            // textBox3
+            // panel2
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(60, 96);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(303, 95);
-            this.textBox3.TabIndex = 6;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.listBox_Customers);
+            this.panel2.Controls.Add(this.tableLayoutPanel1);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(306, 541);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(3, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Customers";
+            // 
+            // listBox_Customers
+            // 
+            this.listBox_Customers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.listBox_Customers.FormattingEnabled = true;
+            this.listBox_Customers.Location = new System.Drawing.Point(3, 29);
+            this.listBox_Customers.Name = "listBox_Customers";
+            this.listBox_Customers.Size = new System.Drawing.Size(300, 459);
+            this.listBox_Customers.TabIndex = 1;
+            this.listBox_Customers.SelectedIndexChanged += new System.EventHandler(this.listBox_Customers_SelectedIndexChanged);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel1.Controls.Add(this.button_Remove, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button_Add, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 492);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(303, 46);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // button_Remove
+            // 
+            this.button_Remove.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_Remove.Location = new System.Drawing.Point(106, 3);
+            this.button_Remove.Name = "button_Remove";
+            this.button_Remove.Size = new System.Drawing.Size(97, 40);
+            this.button_Remove.TabIndex = 4;
+            this.button_Remove.Text = "Remove";
+            this.button_Remove.UseVisualStyleBackColor = true;
+            this.button_Remove.Click += new System.EventHandler(this.button_Remove_Click);
+            // 
+            // button_Add
+            // 
+            this.button_Add.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_Add.Location = new System.Drawing.Point(3, 3);
+            this.button_Add.Name = "button_Add";
+            this.button_Add.Size = new System.Drawing.Size(97, 40);
+            this.button_Add.TabIndex = 3;
+            this.button_Add.Text = "Add";
+            this.button_Add.UseVisualStyleBackColor = true;
+            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
+            // 
+            // label_Error
+            // 
+            this.label_Error.AutoSize = true;
+            this.label_Error.Location = new System.Drawing.Point(252, 38);
+            this.label_Error.Name = "label_Error";
+            this.label_Error.Size = new System.Drawing.Size(0, 13);
+            this.label_Error.TabIndex = 3;
+            this.label_Error.Visible = false;
             // 
             // Customers
             // 
@@ -246,11 +267,11 @@
             this.Name = "Customers";
             this.Size = new System.Drawing.Size(752, 635);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -264,16 +285,17 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox_Customers;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button_Remove;
+        private System.Windows.Forms.Button button_Add;
+        private System.Windows.Forms.TextBox textBox_Address;
+        private System.Windows.Forms.TextBox textBox_FullName;
+        private System.Windows.Forms.TextBox textBox_ID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_Error;
     }
 }

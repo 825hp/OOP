@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using ObjectOrientedPractics.Model;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace ObjectOrientedPractics.View.Tabs
 {
@@ -124,6 +124,9 @@ namespace ObjectOrientedPractics.View.Tabs
                     _items.RemoveAt(index);
                     listBox_Items.Items.RemoveAt(index);
                     ClearInputs();
+                    textBox_Cost.BackColor = Color.White;
+                    textBox_Name.BackColor = Color.White;
+                    textBox_Description.BackColor = Color.White;
                 }
 
             }

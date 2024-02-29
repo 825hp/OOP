@@ -92,6 +92,7 @@
             this.label_Error.Name = "label_Error";
             this.label_Error.Size = new System.Drawing.Size(0, 13);
             this.label_Error.TabIndex = 1;
+            this.label_Error.Visible = false;
             // 
             // textBox_Cost
             // 

@@ -23,7 +23,11 @@ namespace ObjectOrientedPractics.Services
 
         public string AssertStringOnLength(string value, int maxLength, string propertyName)
         {
-            if (value.Length > maxLength)
+            if (value == null || value == "")
+            {
+                throw new ArgumentException($"{propertyName} должен быть не пустым");
+            }
+            else if (value.Length > maxLength)
             {
                 
                 throw new ArgumentException($"{propertyName} превышен лимит");

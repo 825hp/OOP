@@ -26,55 +26,76 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             InitializeComponent();
         }
-        //private void Add_Click(object sender, EventArgs e)
-        //{
-        //    Item newItem = new Item("Item", " ", 0);
-        //    _items.Add(newItem);
-        //    listBox_Items.Items.Add(newItem.Name+newItem.Id.ToString());
-        //}
+        
 
         private void Add_Click(object sender, EventArgs e)
         {
 
             try
             {
-                try
+                if (listBox_Items.SelectedIndex != -1)
                 {
-                    if (listBox_Items.SelectedIndex != -1)
+
+                    float floatValue;
+
+                    if (float.TryParse(_cost, out floatValue))
                     {
-                        float floatValue;
-                        if (float.TryParse(_cost, out floatValue))
+
+                        int index = listBox_Items.SelectedIndex;
+                        try
                         {
-                            int index = listBox_Items.SelectedIndex;
                             _items[index].Name = _name;
-                            _items[index].Info = _info;
-                            _items[index].Cost = floatValue;
-                            listBox_Items.Items[index] = _name;
                         }
-                        else
+                        catch
                         {
-                            throw new Exception("Не удалось преобразовать во float");
+                            textBox_Name.BackColor = Color.Red;
+                            throw;
                         }
-
+                        try
+                        {
+                            _items[index].Info = _info;
+                        }
+                        catch
+                        {
+                            textBox_Description.BackColor = Color.Red;
+                            throw;
+                        }
+                        try
+                        {
+                            _items[index].Cost = floatValue;
+                        }
+                        catch
+                        {
+                            textBox_Cost.BackColor = Color.Red;
+                            throw;
+                        }
+                        
+                        listBox_Items.Items[index] = _name;
+                        textBox_Cost.ReadOnly = true;
+                        textBox_Name.ReadOnly = true;
+                        textBox_Description.ReadOnly = true;
+                        textBox_Cost.BackColor = Color.White;
+                        textBox_Name.BackColor = Color.White;
+                        textBox_Description.BackColor = Color.White;
                     }
-
-
                     else
                     {
-                        Item newItem = new Item("Item", " ", 0);
-                        _items.Add(newItem);
-                        newItem.Name = newItem.Name + newItem.Id.ToString();
-                        listBox_Items.Items.Add(newItem.Name);
-
+                        textBox_Cost.BackColor = Color.Red;
+                        throw new Exception("Не удалось преобразовать во float");
                     }
-                    ClearInputs();
-                    listBox_Items.SelectedIndex = -1;
-                }
-                catch
-                {
 
-                    throw;
                 }
+
+
+                else
+                {
+                    Item newItem = new Item("Item", "Your description", 0);
+                    _items.Add(newItem);
+                    newItem.Name = newItem.Name + newItem.Id.ToString();
+                    listBox_Items.Items.Add(newItem.Name);
+                }
+                ClearInputs();
+                listBox_Items.SelectedIndex = -1;
             }
             catch (Exception ex)
             {
@@ -128,6 +149,15 @@ namespace ObjectOrientedPractics.View.Tabs
             if (listBox_Items.SelectedIndex != -1)
             {
                 int index = listBox_Items.SelectedIndex;
+                
+                if (_items[index].Cost == 0)
+                {
+                    textBox_Cost.BackColor = Color.Red;
+                }
+                textBox_Cost.ReadOnly = false;
+                textBox_Name.ReadOnly = false;
+                textBox_Description.ReadOnly = false;
+                
                 textBox_ID.Text = _items[index].Id.ToString();
                 textBox_Name.Text = _items[index].Name;
                 textBox_Description.Text = _items[index].Info;

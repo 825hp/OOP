@@ -95,8 +95,10 @@
             // 
             // textBox_Cost
             // 
+            this.textBox_Cost.BackColor = System.Drawing.Color.White;
             this.textBox_Cost.Location = new System.Drawing.Point(47, 72);
             this.textBox_Cost.Name = "textBox_Cost";
+            this.textBox_Cost.ReadOnly = true;
             this.textBox_Cost.Size = new System.Drawing.Size(117, 20);
             this.textBox_Cost.TabIndex = 8;
             this.textBox_Cost.TextChanged += new System.EventHandler(this.textBox_Cost_TextChanged);
@@ -140,9 +142,11 @@
             // 
             this.textBox_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Name.BackColor = System.Drawing.Color.White;
             this.textBox_Name.Location = new System.Drawing.Point(3, 135);
             this.textBox_Name.Multiline = true;
             this.textBox_Name.Name = "textBox_Name";
+            this.textBox_Name.ReadOnly = true;
             this.textBox_Name.Size = new System.Drawing.Size(360, 77);
             this.textBox_Name.TabIndex = 3;
             this.textBox_Name.TextChanged += new System.EventHandler(this.textBox_Name_TextChanged);
@@ -161,9 +165,11 @@
             this.textBox_Description.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Description.BackColor = System.Drawing.Color.White;
             this.textBox_Description.Location = new System.Drawing.Point(3, 244);
             this.textBox_Description.Multiline = true;
             this.textBox_Description.Name = "textBox_Description";
+            this.textBox_Description.ReadOnly = true;
             this.textBox_Description.Size = new System.Drawing.Size(360, 144);
             this.textBox_Description.TabIndex = 1;
             this.textBox_Description.TextChanged += new System.EventHandler(this.textBox_Description_TextChanged);

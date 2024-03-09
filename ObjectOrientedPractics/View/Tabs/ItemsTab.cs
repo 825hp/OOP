@@ -20,11 +20,15 @@ namespace ObjectOrientedPractics.View.Tabs
         private string _name;
         private string _info;
         private string _cost;
-
+        private Category _category;
 
         public ItemsTab()
         {
             InitializeComponent();
+            foreach (Category c in Enum.GetValues(typeof(Category)))
+            {
+                comboBox_Category.Items.Add(c);
+            }
         }
         
 
@@ -42,6 +46,7 @@ namespace ObjectOrientedPractics.View.Tabs
                     {
 
                         int index = listBox_Items.SelectedIndex;
+                        _items[index].CategoryOfItem = _category;
                         try
                         {
                             _items[index].Name = _name;
@@ -74,6 +79,9 @@ namespace ObjectOrientedPractics.View.Tabs
                         textBox_Cost.ReadOnly = true;
                         textBox_Name.ReadOnly = true;
                         textBox_Description.ReadOnly = true;
+                        comboBox_Category.BackColor = Color.White;
+                        comboBox_Category.SelectedIndex = -1;
+                        comboBox_Category.Text = "";
                         textBox_Cost.BackColor = Color.White;
                         textBox_Name.BackColor = Color.White;
                         textBox_Description.BackColor = Color.White;
@@ -89,7 +97,7 @@ namespace ObjectOrientedPractics.View.Tabs
 
                 else
                 {
-                    Item newItem = new Item("Item", "Your description", 0);
+                    Item newItem = new Item("Item", "Your description", 0, Category.None);
                     _items.Add(newItem);
                     newItem.Name = newItem.Name + newItem.Id.ToString();
                     listBox_Items.Items.Add(newItem.Name);
@@ -149,26 +157,43 @@ namespace ObjectOrientedPractics.View.Tabs
 
         private void listBox_Items_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             if (listBox_Items.SelectedIndex != -1)
             {
+                
                 int index = listBox_Items.SelectedIndex;
                 
                 if (_items[index].Cost == 0)
                 {
                     textBox_Cost.BackColor = Color.Red;
                 }
+                if (_items[index].CategoryOfItem == Category.None)
+                {
+                    comboBox_Category.BackColor = Color.Red;
+                }
                 textBox_Cost.ReadOnly = false;
                 textBox_Name.ReadOnly = false;
                 textBox_Description.ReadOnly = false;
-                
+
+                comboBox_Category.Text = _items[index].CategoryOfItem.ToString();
                 textBox_ID.Text = _items[index].Id.ToString();
                 textBox_Name.Text = _items[index].Name;
                 textBox_Description.Text = _items[index].Info;
                 textBox_Cost.Text = _items[index].Cost.ToString();
+                _category = _items[index].CategoryOfItem;
                 _name = textBox_Name.Text;
                 _info = textBox_Description.Text;
                 _cost = textBox_Cost.Text;
                 label_Error.Visible = false;
+            }
+        }
+
+        private void comboBox_Category_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_Category.SelectedIndex != -1)
+            {
+                int index = comboBox_Category.SelectedIndex;
+                _category = (Category)comboBox_Category.Items[index];
             }
         }
     }

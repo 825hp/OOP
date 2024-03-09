@@ -46,6 +46,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Add = new System.Windows.Forms.Button();
             this.Remove = new System.Windows.Forms.Button();
+            this.comboBox_Category = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -70,6 +72,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.comboBox_Category);
             this.panel3.Controls.Add(this.label_Error);
             this.panel3.Controls.Add(this.textBox_Cost);
             this.panel3.Controls.Add(this.label6);
@@ -97,7 +101,7 @@
             // textBox_Cost
             // 
             this.textBox_Cost.BackColor = System.Drawing.Color.White;
-            this.textBox_Cost.Location = new System.Drawing.Point(47, 72);
+            this.textBox_Cost.Location = new System.Drawing.Point(69, 72);
             this.textBox_Cost.Name = "textBox_Cost";
             this.textBox_Cost.ReadOnly = true;
             this.textBox_Cost.Size = new System.Drawing.Size(117, 20);
@@ -115,7 +119,7 @@
             // 
             // textBox_ID
             // 
-            this.textBox_ID.Location = new System.Drawing.Point(47, 41);
+            this.textBox_ID.Location = new System.Drawing.Point(69, 41);
             this.textBox_ID.Name = "textBox_ID";
             this.textBox_ID.ReadOnly = true;
             this.textBox_ID.Size = new System.Drawing.Size(117, 20);
@@ -133,7 +137,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 119);
+            this.label4.Location = new System.Drawing.Point(3, 149);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 4;
@@ -144,7 +148,7 @@
             this.textBox_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Name.BackColor = System.Drawing.Color.White;
-            this.textBox_Name.Location = new System.Drawing.Point(3, 135);
+            this.textBox_Name.Location = new System.Drawing.Point(3, 165);
             this.textBox_Name.Multiline = true;
             this.textBox_Name.Name = "textBox_Name";
             this.textBox_Name.ReadOnly = true;
@@ -155,7 +159,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 228);
+            this.label3.Location = new System.Drawing.Point(3, 256);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 2;
@@ -167,7 +171,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Description.BackColor = System.Drawing.Color.White;
-            this.textBox_Description.Location = new System.Drawing.Point(3, 244);
+            this.textBox_Description.Location = new System.Drawing.Point(3, 272);
             this.textBox_Description.Multiline = true;
             this.textBox_Description.Name = "textBox_Description";
             this.textBox_Description.ReadOnly = true;
@@ -256,6 +260,25 @@
             this.Remove.UseVisualStyleBackColor = true;
             this.Remove.Click += new System.EventHandler(this.Remove_Click);
             // 
+            // comboBox_Category
+            // 
+            this.comboBox_Category.BackColor = System.Drawing.Color.White;
+            this.comboBox_Category.FormattingEnabled = true;
+            this.comboBox_Category.Location = new System.Drawing.Point(69, 98);
+            this.comboBox_Category.Name = "comboBox_Category";
+            this.comboBox_Category.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_Category.TabIndex = 1;
+            this.comboBox_Category.SelectedIndexChanged += new System.EventHandler(this.comboBox_Category_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 101);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Category:";
+            // 
             // ItemsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,5 +316,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox_ID;
         private System.Windows.Forms.Label label_Error;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox_Category;
     }
 }

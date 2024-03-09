@@ -19,7 +19,7 @@ namespace ObjectOrientedPractics.Model
         private string _name;
         private string _info;
         private float _cost;
-        
+        public Category _category;
 
 
         ValueValidator Validator = new ValueValidator();
@@ -31,14 +31,24 @@ namespace ObjectOrientedPractics.Model
         /// <param name="name">Наименование</param>
         /// <param name="info">Описание</param>
         /// <param name="cost">Цена</param>
-        public Item(string name, string info, float cost)
+        public Item(string name, string info, float cost, Category category)
         {
             Name = name;
             Info = info;
             Cost = cost;
+            CategoryOfItem = category;
         }
-
-        
+        public Category CategoryOfItem
+        {
+            get
+            {
+                return _category;
+            }
+            set
+            {
+                _category = value;
+            }
+        }
             
         /// <summary>
         /// Свойство Id

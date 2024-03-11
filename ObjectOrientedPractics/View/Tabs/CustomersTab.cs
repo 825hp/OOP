@@ -12,13 +12,35 @@ using ObjectOrientedPractics.Model;
 using ObjectOrientedPractics.View.Controls;
 namespace ObjectOrientedPractics.View.Tabs
 {
-    public partial class Customers : UserControl
+    public partial class CustomersTab : UserControl
     {
         private List<Customer> _customers = new List<Customer>();
         private string _fullname;
         private Address _address;
-        
-        public Customers()
+
+        public List<Model.Customer> Customers
+        {
+            get
+            {
+                return _customers;
+            }
+            set
+            {
+                upCustomerBox(value);
+                _customers = value;
+            }
+        }
+        private void upCustomerBox(List<Model.Customer> newCustomers)
+        {
+            listBox_Customers.Items.Clear();
+            listBox_Customers.SelectedIndex = -1;
+            ClearInputs();
+            for (int i = 0; i < newCustomers.Count; i++)
+            {
+                listBox_Customers.Items.Add(newCustomers[i].Fullname);
+            }
+        }
+        public CustomersTab()
         {
             InitializeComponent();
         }

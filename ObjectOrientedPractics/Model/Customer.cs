@@ -12,7 +12,7 @@ namespace ObjectOrientedPractics.Model
     /// <summary>
     /// Класс Покупателя
     /// </summary>
-    internal class Customer
+    public class Customer
     {
         private static int _count = 1;
         private readonly int _id = _count++;

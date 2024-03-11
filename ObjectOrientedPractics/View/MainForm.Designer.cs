@@ -32,7 +32,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.itemsTab1 = new ObjectOrientedPractics.View.Tabs.ItemsTab();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.customers1 = new ObjectOrientedPractics.View.Tabs.Customers();
+            this.customers1 = new ObjectOrientedPractics.View.Tabs.CustomersTab();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -107,7 +107,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private View.Tabs.ItemsTab itemsTab1;
-        private View.Tabs.Customers customers1;
+        private View.Tabs.CustomersTab customers1;
     }
 }
 

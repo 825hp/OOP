@@ -11,7 +11,7 @@ namespace ObjectOrientedPractics.Model
     /// <summary>
     /// Класс Товара
     /// </summary>
-    internal class Item
+    public class Item
     {
         private static int _count = 1;
         private readonly int _id = _count++;

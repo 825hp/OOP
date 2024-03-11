@@ -31,10 +31,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox_Address = new System.Windows.Forms.TextBox();
+            this.label_Error = new System.Windows.Forms.Label();
             this.textBox_FullName = new System.Windows.Forms.TextBox();
             this.textBox_ID = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +44,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button_Remove = new System.Windows.Forms.Button();
             this.button_Add = new System.Windows.Forms.Button();
-            this.label_Error = new System.Windows.Forms.Label();
+            this.addressControl1 = new ObjectOrientedPractics.View.Controls.AddressControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -62,7 +61,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(690, 547);
+            this.panel1.Size = new System.Drawing.Size(746, 547);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -75,7 +74,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(315, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(372, 541);
+            this.panel3.Size = new System.Drawing.Size(428, 541);
             this.panel3.TabIndex = 0;
             // 
             // panel5
@@ -83,31 +82,26 @@
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel5.Controls.Add(this.addressControl1);
             this.panel5.Controls.Add(this.label_Error);
-            this.panel5.Controls.Add(this.textBox_Address);
             this.panel5.Controls.Add(this.textBox_FullName);
             this.panel5.Controls.Add(this.textBox_ID);
-            this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(366, 194);
+            this.panel5.Size = new System.Drawing.Size(422, 334);
             this.panel5.TabIndex = 0;
             // 
-            // textBox_Address
+            // label_Error
             // 
-            this.textBox_Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Address.BackColor = System.Drawing.Color.White;
-            this.textBox_Address.Location = new System.Drawing.Point(60, 96);
-            this.textBox_Address.Multiline = true;
-            this.textBox_Address.Name = "textBox_Address";
-            this.textBox_Address.ReadOnly = true;
-            this.textBox_Address.Size = new System.Drawing.Size(303, 95);
-            this.textBox_Address.TabIndex = 6;
-            this.textBox_Address.TextChanged += new System.EventHandler(this.textBox_Address_TextChanged);
+            this.label_Error.AutoSize = true;
+            this.label_Error.Location = new System.Drawing.Point(175, 38);
+            this.label_Error.Name = "label_Error";
+            this.label_Error.Size = new System.Drawing.Size(0, 13);
+            this.label_Error.TabIndex = 3;
+            this.label_Error.Visible = false;
             // 
             // textBox_FullName
             // 
@@ -117,7 +111,7 @@
             this.textBox_FullName.Location = new System.Drawing.Point(60, 68);
             this.textBox_FullName.Name = "textBox_FullName";
             this.textBox_FullName.ReadOnly = true;
-            this.textBox_FullName.Size = new System.Drawing.Size(303, 20);
+            this.textBox_FullName.Size = new System.Drawing.Size(359, 20);
             this.textBox_FullName.TabIndex = 5;
             this.textBox_FullName.TextChanged += new System.EventHandler(this.textBox_FullName_TextChanged);
             // 
@@ -128,15 +122,6 @@
             this.textBox_ID.ReadOnly = true;
             this.textBox_ID.Size = new System.Drawing.Size(100, 20);
             this.textBox_ID.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 96);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Address:";
             // 
             // label4
             // 
@@ -172,9 +157,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Location = new System.Drawing.Point(3, 203);
+            this.panel4.Location = new System.Drawing.Point(3, 343);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(366, 335);
+            this.panel4.Size = new System.Drawing.Size(422, 195);
             this.panel4.TabIndex = 1;
             // 
             // panel2
@@ -250,14 +235,12 @@
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
-            // label_Error
+            // addressControl1
             // 
-            this.label_Error.AutoSize = true;
-            this.label_Error.Location = new System.Drawing.Point(252, 38);
-            this.label_Error.Name = "label_Error";
-            this.label_Error.Size = new System.Drawing.Size(0, 13);
-            this.label_Error.TabIndex = 3;
-            this.label_Error.Visible = false;
+            this.addressControl1.Location = new System.Drawing.Point(3, 103);
+            this.addressControl1.Name = "addressControl1";
+            this.addressControl1.Size = new System.Drawing.Size(406, 228);
+            this.addressControl1.TabIndex = 6;
             // 
             // Customers
             // 
@@ -289,13 +272,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button_Remove;
         private System.Windows.Forms.Button button_Add;
-        private System.Windows.Forms.TextBox textBox_Address;
         private System.Windows.Forms.TextBox textBox_FullName;
         private System.Windows.Forms.TextBox textBox_ID;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_Error;
+        private Controls.AddressControl addressControl1;
     }
 }

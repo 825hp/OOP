@@ -135,6 +135,9 @@ namespace ObjectOrientedPractics.View.Tabs
                     textBox_Cost.BackColor = Color.White;
                     textBox_Name.BackColor = Color.White;
                     textBox_Description.BackColor = Color.White;
+                    comboBox_Category.BackColor = Color.White;
+                    comboBox_Category.SelectedIndex = -1;
+                    comboBox_Category.Text = "";
                 }
 
             }

@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using ObjectOrientedPractics.Model;
-
+using ObjectOrientedPractics.View.Controls;
 namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class Customers : UserControl
     {
         private List<Customer> _customers = new List<Customer>();
         private string _fullname;
-        private string _address;
+        private Address _address;
         
         public Customers()
         {
@@ -26,10 +26,10 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             textBox_ID.Text = "";
             textBox_FullName.Text = "";
-            textBox_Address.Text = "";
+            
             label_Error.Visible = false;
             _fullname = "";
-            _address = "";
+            addressControl1.ClearTexBox();
         }
 
         private void button_Add_Click(object sender, EventArgs e)
@@ -50,30 +50,33 @@ namespace ObjectOrientedPractics.View.Tabs
                     }
                     try
                     {
+                        _address = addressControl1.GetAddress;
                         _customers[index].Address = _address;
                     }
                     catch
                     {
-                        textBox_Address.BackColor = Color.Red;
+                        
                         throw;
                     }
 
 
                     listBox_Customers.Items[index] = _fullname;
                     textBox_FullName.ReadOnly = true;
-                    textBox_Address.ReadOnly = true;
+                    
                     textBox_FullName.BackColor = Color.White;
-                    textBox_Address.BackColor = Color.White;
+                    
                 }
 
 
                 else
                 {
-                    Customer newCustomer = new Customer("Customer", "Address");
+                    _address = new Address();
+                    Customer newCustomer = new Customer("Customer", _address);
                     _customers.Add(newCustomer);
                     newCustomer.Fullname = newCustomer.Fullname + newCustomer.Id.ToString();
                     listBox_Customers.Items.Add(newCustomer.Fullname);
                 }
+                
                 ClearInputs();
                 listBox_Customers.SelectedIndex = -1;
             }
@@ -94,7 +97,7 @@ namespace ObjectOrientedPractics.View.Tabs
                     listBox_Customers.Items.RemoveAt(index);
                     ClearInputs();
                     textBox_FullName.BackColor = Color.White;
-                    textBox_Address.BackColor = Color.White;
+                    
                     
                 }
 
@@ -106,10 +109,7 @@ namespace ObjectOrientedPractics.View.Tabs
             _fullname = textBox_FullName.Text;
         }
 
-        private void textBox_Address_TextChanged(object sender, EventArgs e)
-        {
-            _address = textBox_Address.Text;
-        }
+        
 
         private void listBox_Customers_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -118,14 +118,14 @@ namespace ObjectOrientedPractics.View.Tabs
                 int index = listBox_Customers.SelectedIndex;
 
                 textBox_FullName.ReadOnly = false;
-                textBox_Address.ReadOnly = false;
 
+                addressControl1.SetAddress = _customers[index].Address;
                 textBox_ID.Text = _customers[index].Id.ToString();
                 textBox_FullName.Text = _customers[index].Fullname;
-                textBox_Address.Text = _customers[index].Address;
+                
                 
                 _fullname = textBox_FullName.Text;
-                _address = textBox_Address.Text;
+                
                 
                 label_Error.Visible = false;
             }

@@ -22,3 +22,4 @@ C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractic
 C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.exe
 C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.pdb
+C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Controls.AddressControl.resources

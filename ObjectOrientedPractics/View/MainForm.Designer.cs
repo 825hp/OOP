@@ -30,8 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.itemsTab1 = new ObjectOrientedPractics.View.Tabs.ItemsTab();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.customers1 = new ObjectOrientedPractics.View.Tabs.Customers();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -60,6 +60,14 @@
             this.tabPage1.Text = "Items";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // itemsTab1
+            // 
+            this.itemsTab1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemsTab1.Location = new System.Drawing.Point(3, 3);
+            this.itemsTab1.Name = "itemsTab1";
+            this.itemsTab1.Size = new System.Drawing.Size(940, 803);
+            this.itemsTab1.TabIndex = 0;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.customers1);
@@ -71,20 +79,11 @@
             this.tabPage2.Text = "Customers";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // itemsTab1
-            // 
-            this.itemsTab1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemsTab1.Location = new System.Drawing.Point(3, 3);
-            this.itemsTab1.Name = "itemsTab1";
-            this.itemsTab1.Size = new System.Drawing.Size(940, 803);
-            this.itemsTab1.TabIndex = 0;
-            // 
             // customers1
             // 
-            this.customers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customers1.Location = new System.Drawing.Point(3, 3);
             this.customers1.Name = "customers1";
-            this.customers1.Size = new System.Drawing.Size(940, 803);
+            this.customers1.Size = new System.Drawing.Size(752, 635);
             this.customers1.TabIndex = 0;
             // 
             // MainForm

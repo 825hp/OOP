@@ -1,46 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\objectorientedpractics\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|c:\\users\\user\\desktop\\oop\\objectorientedpractics\\view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\objectorientedpractics\\model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|c:\\users\\stepan\\desktop\\oop\\src\\objectorientedpractics\\objectorientedpractics\\view\\tabs\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\objectorientedpractics\\view\\tabs\\itemstab.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\itemstab.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|c:\\users\\stepan\\desktop\\oop\\src\\objectorientedpractics\\objectorientedpractics\\view\\tabs\\itemstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\itemstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\objectorientedpractics\\view\\tabs\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\objectorientedpractics\\view\\tabs\\itemstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\itemstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\objectorientedpractics\\services\\valuevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\services\\valuevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\objectorientedpractics\\view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\objectorientedpractics\\view\\tabs\\itemstab.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\tabs\\customerstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\customerstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\tabs\\customerstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\customerstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\tabs\\itemstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\itemstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\tabs\\itemstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\itemstab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\model\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\model\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\model\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\model\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\tabs\\itemstab.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\itemstab.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\controls\\addresscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\controls\\addresscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\services\\valuevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\services\\valuevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\controls\\addresscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\controls\\addresscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\view\\tabs\\itemstab.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\view\\tabs\\itemstab.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|C:\\Users\\user\\Desktop\\OOP\\objectorientedpractics\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D445A878-6732-46C0-B879-849ACDB25A02}|ObjectOrientedPractics\\ObjectOrientedPractics.csproj|solutionrelative:objectorientedpractics\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,114 +74,137 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Customers.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\Customers.cs",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\Customers.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\Customers.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\Customers.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T09:36:56.047Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Customers.cs",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\Customers.cs",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\Customers.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\Customers.cs",
-              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\Customers.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAwEoAAABEAAAA",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\MainForm.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\MainForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\MainForm.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\MainForm.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T07:12:59.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ItemsTab.cs",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
-              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T10:44:56.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ItemsTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T08:36:42.515Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ItemsTab.resx",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.resx",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.resx",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.resx",
-              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-02-21T11:08:10.026Z",
+              "WhenOpened": "2024-03-11T13:04:54.737Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ValueValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\Services\\ValueValidator.cs",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Services\\ValueValidator.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\Services\\ValueValidator.cs",
-              "RelativeToolTip": "ObjectOrientedPractics\\Services\\ValueValidator.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBsAAAArAAAA",
+              "Title": "Store.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Store.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Model\\Store.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Store.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\Model\\Store.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T07:14:35.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T11:55:36.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\Model\\Customer.cs",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Model\\Customer.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\Model\\Customer.cs",
-              "RelativeToolTip": "ObjectOrientedPractics\\Model\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
+              "DocumentIndex": 5,
+              "Title": "ItemsTab.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwC0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T06:59:04.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T11:39:24.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomersTab.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\CustomersTab.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\CustomersTab.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\CustomersTab.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\CustomersTab.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAcwCgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T07:12:59.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemsTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:36:42.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddressControl.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Controls\\AddressControl.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Controls\\AddressControl.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Controls\\AddressControl.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\Controls\\AddressControl.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAmwFAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T05:35:45.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomersTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\CustomersTab.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\CustomersTab.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\CustomersTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\CustomersTab.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T09:36:56.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddressControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Controls\\AddressControl.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Controls\\AddressControl.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Controls\\AddressControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\Controls\\AddressControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T05:41:06.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Customer.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Model\\Customer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Customer.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\Model\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T06:59:04.39Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\MainForm.cs",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "ObjectOrientedPractics\\View\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Item.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Model\\Item.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Item.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\Model\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T05:25:34.414Z"
+              "WhenOpened": "2024-02-21T05:27:39.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "ItemsTab.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.Designer.cs",
               "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.Designer.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.Designer.cs",
               "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -166,15 +213,60 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\Model\\Item.cs",
-              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Model\\Item.cs",
-              "ToolTip": "C:\\Users\\Stepan\\Desktop\\OOP\\src\\ObjectOrientedPractics\\ObjectOrientedPractics\\Model\\Item.cs",
-              "RelativeToolTip": "ObjectOrientedPractics\\Model\\Item.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAABLAAAA",
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\MainForm.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\MainForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T05:27:39.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-21T05:25:34.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Address.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Model\\Address.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Address.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\Model\\Address.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T05:23:49.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Category.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Model\\Category.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Model\\Category.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\Model\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T10:57:11.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ValueValidator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Services\\ValueValidator.cs",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\Services\\ValueValidator.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\Services\\ValueValidator.cs",
+              "RelativeToolTip": "ObjectOrientedPractics\\Services\\ValueValidator.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T07:14:35.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ItemsTab.resx",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.resx",
+              "RelativeDocumentMoniker": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.resx",
+              "ToolTip": "C:\\Users\\user\\Desktop\\OOP\\ObjectOrientedPractics\\View\\Tabs\\ItemsTab.resx",
+              "RelativeToolTip": "ObjectOrientedPractics\\View\\Tabs\\ItemsTab.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-02-21T11:08:10.026Z"
             }
           ]
         }

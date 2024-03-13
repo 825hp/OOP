@@ -6,18 +6,19 @@ using System.Text;
 using System.Threading.Tasks;
 using ObjectOrientedPractics.Services;
 
+
 namespace ObjectOrientedPractics.Model
 {
     /// <summary>
     /// Класс Покупателя
     /// </summary>
-    internal class Customer
+    public class Customer
     {
         private static int _count = 1;
         private readonly int _id = _count++;
 
         private string _fullname;
-        private string _address;
+        private Address _address;
 
         ValueValidator Validator = new ValueValidator();
 
@@ -27,7 +28,7 @@ namespace ObjectOrientedPractics.Model
         /// <param name="id">Id</param>
         /// <param name="fullname">ФИО</param>
         /// <param name="address">Адрес</param>
-        public Customer(string fullname, string address)
+        public Customer(string fullname, Address address)
         {
             Fullname = fullname;
             Address = address;
@@ -62,11 +63,11 @@ namespace ObjectOrientedPractics.Model
         /// <summary>
         /// Свойство Адреса
         /// </summary>
-        public string Address
+        public Address Address
         {
             set
             {
-                _address = Validator.AssertStringOnLength(value, 500, "Address");
+                _address = value; 
                 
             }
             get

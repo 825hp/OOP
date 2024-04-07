@@ -16,13 +16,12 @@ namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class ItemsTab : UserControl
     {
-        private List<Item> _items = new List<Item>();
+        public static List<Item> _items = new List<Item>();
         private string _name;
         private string _info;
         private string _cost;
         private Category _category;
 
-        
         public List<Item> Items
         {
             get
@@ -31,9 +30,8 @@ namespace ObjectOrientedPractics.View.Tabs
             }
             set
             {
-                
-                _items = value;
                 upListBox(value);
+                _items = value;
             }
         }
         private void upListBox(List<Item> newitems)
@@ -41,14 +39,10 @@ namespace ObjectOrientedPractics.View.Tabs
             listBox_Items.Items.Clear();
             listBox_Items.SelectedIndex = -1;
             ClearInputs();
-            if (newitems!=null)
+            for (int i = 0; i < newitems.Count; i++)
             {
-                for (int i = 0; i < newitems.Count; i++)
-                {
-                    listBox_Items.Items.Add(newitems[i].Name);
-                }
+                listBox_Items.Items.Add(newitems[i].Name);
             }
-            
         }
         public ItemsTab()
         {
@@ -58,7 +52,7 @@ namespace ObjectOrientedPractics.View.Tabs
                 comboBox_Category.Items.Add(c);
             }
         }
-        
+
 
         private void Add_Click(object sender, EventArgs e)
         {
@@ -102,7 +96,7 @@ namespace ObjectOrientedPractics.View.Tabs
                             textBox_Cost.BackColor = Color.Red;
                             throw;
                         }
-                        
+
                         listBox_Items.Items[index] = _name;
                         textBox_Cost.ReadOnly = true;
                         textBox_Name.ReadOnly = true;
@@ -191,9 +185,9 @@ namespace ObjectOrientedPractics.View.Tabs
 
             if (listBox_Items.SelectedIndex != -1)
             {
-                
+
                 int index = listBox_Items.SelectedIndex;
-                
+
                 if (_items[index].Cost == 0)
                 {
                     textBox_Cost.BackColor = Color.Red;
@@ -229,4 +223,3 @@ namespace ObjectOrientedPractics.View.Tabs
         }
     }
 }
-

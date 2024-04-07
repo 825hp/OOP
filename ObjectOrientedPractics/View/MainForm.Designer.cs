@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.itemsTab1 = new ObjectOrientedPractics.View.Tabs.ItemsTab();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.customersTab1 = new ObjectOrientedPractics.View.Tabs.CustomersTab();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.cartsTab1 = new ObjectOrientedPractics.View.Tabs.CartsTab();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -62,8 +61,16 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(770, 734);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Items";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // itemsTab1
+            // 
+            
+            this.itemsTab1.Location = new System.Drawing.Point(3, 3);
+            this.itemsTab1.Name = "itemsTab1";
+            this.itemsTab1.Size = new System.Drawing.Size(757, 742);
+            this.itemsTab1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -73,8 +80,15 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(770, 734);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Customers";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // customersTab1
+            // 
+            this.customersTab1.Location = new System.Drawing.Point(3, 3);
+            this.customersTab1.Name = "customersTab1";
+            this.customersTab1.Size = new System.Drawing.Size(752, 635);
+            this.customersTab1.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -84,23 +98,8 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(770, 734);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Carts";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // itemsTab1
-            // 
-            this.itemsTab1.Items = ((System.Collections.Generic.List<ObjectOrientedPractics.Model.Item>)(resources.GetObject("itemsTab1.Items")));
-            this.itemsTab1.Location = new System.Drawing.Point(3, 3);
-            this.itemsTab1.Name = "itemsTab1";
-            this.itemsTab1.Size = new System.Drawing.Size(757, 742);
-            this.itemsTab1.TabIndex = 0;
-            // 
-            // customersTab1
-            // 
-            this.customersTab1.Location = new System.Drawing.Point(3, 3);
-            this.customersTab1.Name = "customersTab1";
-            this.customersTab1.Size = new System.Drawing.Size(752, 635);
-            this.customersTab1.TabIndex = 0;
             // 
             // cartsTab1
             // 

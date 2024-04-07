@@ -14,9 +14,8 @@ namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class CartsTab : UserControl
     {
-
-
         List<Customer> customers2 = CustomersTab._customers;
+        List<Item> items2 = ItemsTab._items;
         public CartsTab()
         {
             InitializeComponent();
@@ -36,6 +35,18 @@ namespace ObjectOrientedPractics.View.Tabs
             for (int i = 0; i < customers2.Count; i++)
             {
                 comboBox_Customers.Items.Add(customers2[i].Fullname);
+            }
+        }
+
+        private void comboBox_Customers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_Customers.SelectedIndex != -1) 
+            {
+                for (int i = 0; i < items2.Count; i++)
+                {
+                    listBox_Items.Items.Add(items2[i].Name);
+                }
+                
             }
         }
     }

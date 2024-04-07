@@ -122,10 +122,12 @@
             // 
             // textBox_Cart
             // 
+            this.textBox_Cart.BackColor = System.Drawing.Color.White;
             this.textBox_Cart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_Cart.Location = new System.Drawing.Point(3, 84);
             this.textBox_Cart.Multiline = true;
             this.textBox_Cart.Name = "textBox_Cart";
+            this.textBox_Cart.ReadOnly = true;
             this.textBox_Cart.Size = new System.Drawing.Size(315, 156);
             this.textBox_Cart.TabIndex = 3;
             // 
@@ -145,6 +147,7 @@
             this.comboBox_Customers.Name = "comboBox_Customers";
             this.comboBox_Customers.Size = new System.Drawing.Size(204, 21);
             this.comboBox_Customers.TabIndex = 1;
+            this.comboBox_Customers.SelectedIndexChanged += new System.EventHandler(this.comboBox_Customers_SelectedIndexChanged);
             this.comboBox_Customers.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBox_Customers_MouseClick);
             // 
             // label2

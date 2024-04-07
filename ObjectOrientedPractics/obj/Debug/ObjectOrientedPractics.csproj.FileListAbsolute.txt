@@ -23,3 +23,17 @@ C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractic
 C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.pdb
 C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Controls.AddressControl.resources
 C:\Users\user\Desktop\OOP\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.CustomersTab.resources
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.exe.config
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.exe
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.pdb
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.Properties.Resources.resources
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Controls.AddressControl.resources
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.CustomersTab.resources
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.ItemsTab.resources
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.GenerateResource.cache
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.exe
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.pdb
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.CartsTab.resources
+C:\Users\user\Desktop\OOP2\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.MainForm.resources

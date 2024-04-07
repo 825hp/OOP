@@ -11,6 +11,7 @@ namespace ObjectOrientedPractics.Model
     /// <summary>
     /// Класс Товара
     /// </summary>
+    [Serializable()]
     public class Item
     {
         private static int _count = 1;

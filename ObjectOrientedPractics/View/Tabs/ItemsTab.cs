@@ -22,6 +22,7 @@ namespace ObjectOrientedPractics.View.Tabs
         private string _cost;
         private Category _category;
 
+        
         public List<Item> Items
         {
             get
@@ -30,8 +31,9 @@ namespace ObjectOrientedPractics.View.Tabs
             }
             set
             {
-                upListBox(value);
+                
                 _items = value;
+                upListBox(value);
             }
         }
         private void upListBox(List<Item> newitems)
@@ -39,10 +41,14 @@ namespace ObjectOrientedPractics.View.Tabs
             listBox_Items.Items.Clear();
             listBox_Items.SelectedIndex = -1;
             ClearInputs();
-            for (int i = 0; i < newitems.Count; i++)
+            if (newitems!=null)
             {
-                listBox_Items.Items.Add(newitems[i].Name);
+                for (int i = 0; i < newitems.Count; i++)
+                {
+                    listBox_Items.Items.Add(newitems[i].Name);
+                }
             }
+            
         }
         public ItemsTab()
         {

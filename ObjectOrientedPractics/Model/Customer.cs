@@ -12,6 +12,7 @@ namespace ObjectOrientedPractics.Model
     /// <summary>
     /// Класс Покупателя
     /// </summary>
+    [Serializable()]
     public class Customer
     {
         private static int _count = 1;

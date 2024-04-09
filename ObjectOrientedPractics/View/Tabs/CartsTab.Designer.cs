@@ -35,7 +35,6 @@
             this.button_CreateOrder = new System.Windows.Forms.Button();
             this.label_Amount = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox_Cart = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox_Customers = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_AddToCart = new System.Windows.Forms.Button();
             this.listBox_Items = new System.Windows.Forms.ListBox();
+            this.listBox_Cart = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,12 +59,12 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.listBox_Cart);
             this.panel3.Controls.Add(this.buttonClearCart);
             this.panel3.Controls.Add(this.button_RemoveItem);
             this.panel3.Controls.Add(this.button_CreateOrder);
             this.panel3.Controls.Add(this.label_Amount);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.textBox_Cart);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.comboBox_Customers);
             this.panel3.Controls.Add(this.label2);
@@ -75,25 +75,27 @@
             // 
             // buttonClearCart
             // 
-            this.buttonClearCart.Location = new System.Drawing.Point(220, 283);
+            this.buttonClearCart.Location = new System.Drawing.Point(220, 294);
             this.buttonClearCart.Name = "buttonClearCart";
             this.buttonClearCart.Size = new System.Drawing.Size(98, 38);
             this.buttonClearCart.TabIndex = 8;
             this.buttonClearCart.Text = "Clear Cart";
             this.buttonClearCart.UseVisualStyleBackColor = true;
+            this.buttonClearCart.Click += new System.EventHandler(this.buttonClearCart_Click);
             // 
             // button_RemoveItem
             // 
-            this.button_RemoveItem.Location = new System.Drawing.Point(116, 283);
+            this.button_RemoveItem.Location = new System.Drawing.Point(116, 294);
             this.button_RemoveItem.Name = "button_RemoveItem";
             this.button_RemoveItem.Size = new System.Drawing.Size(98, 38);
             this.button_RemoveItem.TabIndex = 7;
             this.button_RemoveItem.Text = "Remove Item";
             this.button_RemoveItem.UseVisualStyleBackColor = true;
+            this.button_RemoveItem.Click += new System.EventHandler(this.button_RemoveItem_Click);
             // 
             // button_CreateOrder
             // 
-            this.button_CreateOrder.Location = new System.Drawing.Point(3, 283);
+            this.button_CreateOrder.Location = new System.Drawing.Point(3, 294);
             this.button_CreateOrder.Name = "button_CreateOrder";
             this.button_CreateOrder.Size = new System.Drawing.Size(98, 38);
             this.button_CreateOrder.TabIndex = 6;
@@ -104,32 +106,21 @@
             // 
             this.label_Amount.AutoSize = true;
             this.label_Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Amount.Location = new System.Drawing.Point(3, 256);
+            this.label_Amount.Location = new System.Drawing.Point(3, 267);
             this.label_Amount.Name = "label_Amount";
-            this.label_Amount.Size = new System.Drawing.Size(66, 24);
+            this.label_Amount.Size = new System.Drawing.Size(68, 24);
             this.label_Amount.TabIndex = 5;
-            this.label_Amount.Text = "COST";
+            this.label_Amount.Text = "0 RUB";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(3, 243);
+            this.label4.Location = new System.Drawing.Point(3, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Amount:";
-            // 
-            // textBox_Cart
-            // 
-            this.textBox_Cart.BackColor = System.Drawing.Color.White;
-            this.textBox_Cart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_Cart.Location = new System.Drawing.Point(3, 84);
-            this.textBox_Cart.Multiline = true;
-            this.textBox_Cart.Name = "textBox_Cart";
-            this.textBox_Cart.ReadOnly = true;
-            this.textBox_Cart.Size = new System.Drawing.Size(315, 156);
-            this.textBox_Cart.TabIndex = 3;
             // 
             // label3
             // 
@@ -198,6 +189,14 @@
             this.listBox_Items.Size = new System.Drawing.Size(261, 446);
             this.listBox_Items.TabIndex = 0;
             // 
+            // listBox_Cart
+            // 
+            this.listBox_Cart.FormattingEnabled = true;
+            this.listBox_Cart.Location = new System.Drawing.Point(3, 84);
+            this.listBox_Cart.Name = "listBox_Cart";
+            this.listBox_Cart.Size = new System.Drawing.Size(315, 160);
+            this.listBox_Cart.TabIndex = 9;
+            // 
             // CartsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,7 +221,6 @@
         private System.Windows.Forms.ListBox listBox_Items;
         private System.Windows.Forms.Label label_Amount;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox_Cart;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox_Customers;
         private System.Windows.Forms.Label label2;
@@ -231,5 +229,6 @@
         private System.Windows.Forms.Button buttonClearCart;
         private System.Windows.Forms.Button button_RemoveItem;
         private System.Windows.Forms.Button button_CreateOrder;
+        private System.Windows.Forms.ListBox listBox_Cart;
     }
 }

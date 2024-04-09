@@ -196,6 +196,10 @@ namespace ObjectOrientedPractics.View.Tabs
                 {
                     comboBox_Category.BackColor = Color.Red;
                 }
+                else
+                {
+                    comboBox_Category.BackColor = Color.White;
+                }
                 textBox_Cost.ReadOnly = false;
                 textBox_Name.ReadOnly = false;
                 textBox_Description.ReadOnly = false;

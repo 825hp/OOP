@@ -14,7 +14,7 @@ namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class CustomersTab : UserControl
     {
-        public static List<Customer> _customers = new List<Customer>();
+        public static List<Customer> _customers { get; set; }
         private string _fullname;
         private Address _address;
         

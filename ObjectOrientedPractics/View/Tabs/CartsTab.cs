@@ -15,11 +15,14 @@ namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class CartsTab : UserControl
     {
-        List<Customer> customers2 = CustomersTab._customers;
-        List<Item> items2 = new List<Item>();
+        
+        public static List<Customer> customers2 { get; set; }
+        public static List<Item> _items { get; set; }
+        private List<Item> items2 = new List<Item>();
         public CartsTab()
         {
             InitializeComponent();
+            
         }
 
         private void button_AddToCart_Click(object sender, EventArgs e)
@@ -45,27 +48,33 @@ namespace ObjectOrientedPractics.View.Tabs
                 comboBox_Customers.Items.Add(customers2[i].Fullname);
             }
         }
-
-        private void comboBox_Customers_SelectedIndexChanged(object sender, EventArgs e)
+        public void update_combo()
         {
-            items2.Clear();
-            for (int i = 0; i < ItemsTab._items.Count; i++)
             {
-                if (ItemsTab._items[i].Cost != 0 && ItemsTab._items[i].CategoryOfItem != 0)
+                items2.Clear();
+                for (int i = 0; i < ItemsTab._items.Count; i++)
                 {
-                    items2.Add(ItemsTab._items[i]);
-                    
+                    if (ItemsTab._items[i].Cost != 0 && ItemsTab._items[i].CategoryOfItem != 0)
+                    {
+                        items2.Add(ItemsTab._items[i]);
+
+                    }
+                }
+
+                if (comboBox_Customers.SelectedIndex != -1)
+                {
+                    listBox_Items.Items.Clear();
+                    for (int i = 0; i < items2.Count; i++)
+                    {
+                        listBox_Items.Items.Add(items2[i].Name + " price:" + items2[i].Cost.ToString() + "RUB");
+                    }
+
                 }
             }
-            if (comboBox_Customers.SelectedIndex != -1) 
-            {
-                listBox_Items.Items.Clear();
-                for (int i = 0; i < items2.Count; i++)
-                {
-                    listBox_Items.Items.Add(items2[i].Name+" price:"+items2[i].Cost.ToString()+"RUB");
-                }
-                
-            }
+        }
+        public void comboBox_Customers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            update_combo();
         }
 
         private void buttonClearCart_Click(object sender, EventArgs e)

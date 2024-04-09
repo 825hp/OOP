@@ -16,7 +16,7 @@ namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class ItemsTab : UserControl
     {
-        public static List<Item> _items = new List<Item>();
+        public static List<Item> _items { get; set; }
         private string _name;
         private string _info;
         private string _cost;
@@ -39,10 +39,14 @@ namespace ObjectOrientedPractics.View.Tabs
             listBox_Items.Items.Clear();
             listBox_Items.SelectedIndex = -1;
             ClearInputs();
-            for (int i = 0; i < newitems.Count; i++)
+            if (newitems!=null)
             {
-                listBox_Items.Items.Add(newitems[i].Name);
+                for (int i = 0; i < newitems.Count; i++)
+                {
+                    listBox_Items.Items.Add(newitems[i].Name);
+                }
             }
+            
         }
         public ItemsTab()
         {
@@ -96,7 +100,7 @@ namespace ObjectOrientedPractics.View.Tabs
                             textBox_Cost.BackColor = Color.Red;
                             throw;
                         }
-
+                        
                         listBox_Items.Items[index] = _name;
                         textBox_Cost.ReadOnly = true;
                         textBox_Name.ReadOnly = true;

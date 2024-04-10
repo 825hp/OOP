@@ -8,8 +8,10 @@ namespace ObjectOrientedPractics.Model
 {
     public class Cart
     {
-        private List<Item> _items3 = new List<Item>();
-        public double _amount;
+        private List<Item> _items3;
+        
+        private double _amount;
+
         public List<Item> Items3
         {
             get
@@ -21,25 +23,17 @@ namespace ObjectOrientedPractics.Model
                 _items3 = value;
             }
         }
+        
 
         public double Amount
         {
             get
             {
-                
-                if (_items3.Count == 0)
-                {
-                    return 0.0;
-                }
-                else
-                {
-                    double current = 0.0;
-                    for (int i = 0; i < _items3.Count; i++)
-                    {
-                        current += _items3[i].Cost;
-                    }
-                    return current;
-                }
+                return _amount;
+            }
+            set
+            {
+                _amount = value;
             }
         }
     }

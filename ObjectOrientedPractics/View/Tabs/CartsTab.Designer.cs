@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.listBox_Cart = new System.Windows.Forms.ListBox();
             this.buttonClearCart = new System.Windows.Forms.Button();
             this.button_RemoveItem = new System.Windows.Forms.Button();
             this.button_CreateOrder = new System.Windows.Forms.Button();
@@ -42,7 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_AddToCart = new System.Windows.Forms.Button();
             this.listBox_Items = new System.Windows.Forms.ListBox();
-            this.listBox_Cart = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.listBox_Cart);
             this.panel3.Controls.Add(this.buttonClearCart);
             this.panel3.Controls.Add(this.button_RemoveItem);
@@ -72,6 +74,14 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(321, 524);
             this.panel3.TabIndex = 0;
+            // 
+            // listBox_Cart
+            // 
+            this.listBox_Cart.FormattingEnabled = true;
+            this.listBox_Cart.Location = new System.Drawing.Point(3, 84);
+            this.listBox_Cart.Name = "listBox_Cart";
+            this.listBox_Cart.Size = new System.Drawing.Size(315, 160);
+            this.listBox_Cart.TabIndex = 9;
             // 
             // buttonClearCart
             // 
@@ -101,6 +111,7 @@
             this.button_CreateOrder.TabIndex = 6;
             this.button_CreateOrder.Text = "Create Order";
             this.button_CreateOrder.UseVisualStyleBackColor = true;
+            this.button_CreateOrder.Click += new System.EventHandler(this.button_CreateOrder_Click);
             // 
             // label_Amount
             // 
@@ -189,13 +200,14 @@
             this.listBox_Items.Size = new System.Drawing.Size(261, 446);
             this.listBox_Items.TabIndex = 0;
             // 
-            // listBox_Cart
+            // label5
             // 
-            this.listBox_Cart.FormattingEnabled = true;
-            this.listBox_Cart.Location = new System.Drawing.Point(3, 84);
-            this.listBox_Cart.Name = "listBox_Cart";
-            this.listBox_Cart.Size = new System.Drawing.Size(315, 160);
-            this.listBox_Cart.TabIndex = 9;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(66, 386);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "label5";
             // 
             // CartsTab
             // 
@@ -230,5 +242,6 @@
         private System.Windows.Forms.Button button_RemoveItem;
         private System.Windows.Forms.Button button_CreateOrder;
         private System.Windows.Forms.ListBox listBox_Cart;
+        private System.Windows.Forms.Label label5;
     }
 }

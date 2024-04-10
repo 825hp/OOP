@@ -26,11 +26,18 @@ namespace ObjectOrientedPractics.View
             CartsTab.customers2 = _store.Customers;
             ItemsTab._items = _store.Items;
             CartsTab._items = _store.Items;
+            OrdersTab.Customers = _store.Customers;
+            
         }
 
         private void tabPage3_Enter(object sender, EventArgs e)
         {
             cartsTab1.update_combo();
+        }
+
+        private void tabPage4_Enter(object sender, EventArgs e)
+        {
+            ordersTab1.addToTable();
         }
     }
 }

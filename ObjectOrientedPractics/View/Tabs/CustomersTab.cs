@@ -14,32 +14,11 @@ namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class CustomersTab : UserControl
     {
-        private List<Customer> _customers = new List<Customer>();
+        public static List<Customer> _customers { get; set; }
         private string _fullname;
         private Address _address;
-
-        public List<Model.Customer> Customers
-        {
-            get
-            {
-                return _customers;
-            }
-            set
-            {
-                upCustomerBox(value);
-                _customers = value;
-            }
-        }
-        private void upCustomerBox(List<Model.Customer> newCustomers)
-        {
-            listBox_Customers.Items.Clear();
-            listBox_Customers.SelectedIndex = -1;
-            ClearInputs();
-            for (int i = 0; i < newCustomers.Count; i++)
-            {
-                listBox_Customers.Items.Add(newCustomers[i].Fullname);
-            }
-        }
+        
+        
         public CustomersTab()
         {
             InitializeComponent();
@@ -97,6 +76,7 @@ namespace ObjectOrientedPractics.View.Tabs
                     _customers.Add(newCustomer);
                     newCustomer.Fullname = newCustomer.Fullname + newCustomer.Id.ToString();
                     listBox_Customers.Items.Add(newCustomer.Fullname);
+                    
                 }
                 
                 ClearInputs();

@@ -16,7 +16,7 @@ namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class ItemsTab : UserControl
     {
-        private List<Item> _items = new List<Item>();
+        public static List<Item> _items { get; set; }
         private string _name;
         private string _info;
         private string _cost;
@@ -39,10 +39,14 @@ namespace ObjectOrientedPractics.View.Tabs
             listBox_Items.Items.Clear();
             listBox_Items.SelectedIndex = -1;
             ClearInputs();
-            for (int i = 0; i < newitems.Count; i++)
+            if (newitems!=null)
             {
-                listBox_Items.Items.Add(newitems[i].Name);
+                for (int i = 0; i < newitems.Count; i++)
+                {
+                    listBox_Items.Items.Add(newitems[i].Name);
+                }
             }
+            
         }
         public ItemsTab()
         {
@@ -52,7 +56,7 @@ namespace ObjectOrientedPractics.View.Tabs
                 comboBox_Category.Items.Add(c);
             }
         }
-        
+
 
         private void Add_Click(object sender, EventArgs e)
         {
@@ -185,9 +189,9 @@ namespace ObjectOrientedPractics.View.Tabs
 
             if (listBox_Items.SelectedIndex != -1)
             {
-                
+
                 int index = listBox_Items.SelectedIndex;
-                
+
                 if (_items[index].Cost == 0)
                 {
                     textBox_Cost.BackColor = Color.Red;
@@ -195,6 +199,10 @@ namespace ObjectOrientedPractics.View.Tabs
                 if (_items[index].CategoryOfItem == Category.None)
                 {
                     comboBox_Category.BackColor = Color.Red;
+                }
+                else
+                {
+                    comboBox_Category.BackColor = Color.White;
                 }
                 textBox_Cost.ReadOnly = false;
                 textBox_Name.ReadOnly = false;
@@ -223,4 +231,3 @@ namespace ObjectOrientedPractics.View.Tabs
         }
     }
 }
-

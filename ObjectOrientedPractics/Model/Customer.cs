@@ -12,11 +12,12 @@ namespace ObjectOrientedPractics.Model
     /// <summary>
     /// Класс Покупателя
     /// </summary>
+    [Serializable()]
     public class Customer
     {
         private static int _count = 1;
         private readonly int _id = _count++;
-
+        //private List<Order> _order = new List<Order>();
         private string _fullname;
         private Address _address;
 
@@ -33,6 +34,12 @@ namespace ObjectOrientedPractics.Model
             Fullname = fullname;
             Address = address;
         }
+
+        //public List<Order> Order
+        //{
+            //get { return _order; }
+            //set { _order = value; }
+        //}
 
         /// <summary>
         /// Свойство Id

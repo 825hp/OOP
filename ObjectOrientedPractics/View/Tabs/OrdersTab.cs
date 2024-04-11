@@ -59,6 +59,7 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             if (orders2.Count-1 >= dataGridView1.CurrentCell.RowIndex)
             {
+                comboBox_Status.Items.Clear();
                 foreach (OrderStatus c in Enum.GetValues(typeof(OrderStatus)))
                 {
                     comboBox_Status.Items.Add(c);

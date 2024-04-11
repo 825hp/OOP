@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,12 +19,15 @@ namespace ObjectOrientedPractics.View.Tabs
         public static List<Customer> Customers { get; set; }
         public OrdersTab()
         {
+            
             InitializeComponent();
+            
         }
         public void addToTable()
         {
             if (orders2.Count != 0)
             {
+                
                 dataGridView1.Rows.Clear();
 
                 for (int i = 0; i < orders2.Count; i++)
@@ -39,8 +43,8 @@ namespace ObjectOrientedPractics.View.Tabs
                     row.Cells[3].Value = orders2[i].Address.City + ", " + orders2[i].Address.Street + ", " + orders2[i].Address.Building;
                     row.Cells[4].Value = orders2[i].Date;
                     row.Cells[5].Value = orders2[i].Cart.Amount;
-
                     
+
                     dataGridView1.Rows.Add(row);
                 }
             }
@@ -61,7 +65,6 @@ namespace ObjectOrientedPractics.View.Tabs
                 textBoxCreated.Text = orders2[index].Date.ToString();
                 addressControl1.SetAddress = orders2[index].Address;
                 label_Amount.Text = orders2[index].Cart.Amount.ToString()+"RUB";
-                label8.Text = orders2[index].Cart.Items3.Count.ToString();
                 for (int i = 0; i < orders2[index].Cart.Items3.Count; i++)
                 {
                     

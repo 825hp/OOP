@@ -40,6 +40,7 @@
             this.label_Amount = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.addressControl1 = new ObjectOrientedPractics.View.Controls.AddressControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -49,8 +50,6 @@
             this.grid_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_date_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressControl1 = new ObjectOrientedPractics.View.Controls.AddressControl();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,7 +57,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.comboBox_Status);
             this.panel1.Controls.Add(this.textBoxCreated);
             this.panel1.Controls.Add(this.textBox_ID);
@@ -176,6 +174,13 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Order Items:";
             // 
+            // addressControl1
+            // 
+            this.addressControl1.Location = new System.Drawing.Point(401, 150);
+            this.addressControl1.Name = "addressControl1";
+            this.addressControl1.Size = new System.Drawing.Size(398, 127);
+            this.addressControl1.TabIndex = 1;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
@@ -249,22 +254,6 @@
             this.grid_amount.Name = "grid_amount";
             this.grid_amount.ReadOnly = true;
             // 
-            // addressControl1
-            // 
-            this.addressControl1.Location = new System.Drawing.Point(401, 150);
-            this.addressControl1.Name = "addressControl1";
-            this.addressControl1.Size = new System.Drawing.Size(398, 127);
-            this.addressControl1.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(617, 367);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "label8";
-            // 
             // OrdersTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,6 +294,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_address;
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_date_order;
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_amount;
-        private System.Windows.Forms.Label label8;
     }
 }

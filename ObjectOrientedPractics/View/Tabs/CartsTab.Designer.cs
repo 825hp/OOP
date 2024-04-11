@@ -43,7 +43,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_AddToCart = new System.Windows.Forms.Button();
             this.listBox_Items = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,7 +59,6 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.listBox_Cart);
             this.panel3.Controls.Add(this.buttonClearCart);
             this.panel3.Controls.Add(this.button_RemoveItem);
@@ -200,15 +198,6 @@
             this.listBox_Items.Size = new System.Drawing.Size(261, 446);
             this.listBox_Items.TabIndex = 0;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 386);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "label5";
-            // 
             // CartsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,6 +231,5 @@
         private System.Windows.Forms.Button button_RemoveItem;
         private System.Windows.Forms.Button button_CreateOrder;
         private System.Windows.Forms.ListBox listBox_Cart;
-        private System.Windows.Forms.Label label5;
     }
 }

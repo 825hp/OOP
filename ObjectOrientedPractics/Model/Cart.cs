@@ -8,9 +8,12 @@ namespace ObjectOrientedPractics.Model
 {
     public class Cart
     {
-        private List<Item> _items3;
+        
+        public  List<Item> _items3 = new List<Item>();
         
         private double _amount;
+
+        
 
         public List<Item> Items3
         {

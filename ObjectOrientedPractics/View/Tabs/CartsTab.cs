@@ -116,8 +116,14 @@ namespace ObjectOrientedPractics.View.Tabs
             {
                 
                 Order newOrder = new Order();
-                newOrder.Cart.Items3 = itemsInCart;
-                label5.Text = newOrder.Cart.Items3.Count.ToString();
+                
+                for (int i = 0; i < itemsInCart.Count; i++)
+                {
+                    //создаваь новый элемент item
+                    Item itemOfCart = itemsInCart[i];
+                    newOrder.Cart.Items3.Add(itemOfCart);
+                }
+                
                 newOrder.Date = DateTime.Now;
                 newOrder.Address = customers2[comboBox_Customers.SelectedIndex].Address;
                 newOrder.OrderStatus = (OrderStatus)0;
@@ -126,6 +132,7 @@ namespace ObjectOrientedPractics.View.Tabs
                 double current = Double.Parse(current1);
                 newOrder.Cart.Amount = current;
                 orders.Add(newOrder);
+                
                 clearCart();
             }
         }

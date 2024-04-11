@@ -22,7 +22,11 @@ namespace ObjectOrientedPractics.Model
         //    Date = date;
         //    Address = address;
         //}
-
+        public Cart Cart
+        {
+            get { return _cart; }
+            set { _cart = value; }
+        }
         public string Fullname
         {
             get { return fullname; }
@@ -53,11 +57,7 @@ namespace ObjectOrientedPractics.Model
                 _address = value;   
             }
         }
-        public Cart Cart
-        {
-            get { return _cart; }
-            set { _cart = value; }
-        }
+        
     }
 
 }

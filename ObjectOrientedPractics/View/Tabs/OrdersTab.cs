@@ -21,7 +21,10 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             
             InitializeComponent();
-            
+            foreach (OrderStatus c in Enum.GetValues(typeof(OrderStatus)))
+            {
+                comboBox_Status.Items.Add(c);
+            }
         }
         public void addToTable()
         {
@@ -65,6 +68,7 @@ namespace ObjectOrientedPractics.View.Tabs
                 textBoxCreated.Text = orders2[index].Date.ToString();
                 addressControl1.SetAddress = orders2[index].Address;
                 label_Amount.Text = orders2[index].Cart.Amount.ToString()+"RUB";
+                listBox_Cart.Items.Clear();
                 for (int i = 0; i < orders2[index].Cart.Items3.Count; i++)
                 {
                     
@@ -72,6 +76,15 @@ namespace ObjectOrientedPractics.View.Tabs
                 }
             }
             
+        }
+
+        private void comboBox_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_Status.SelectedIndex!=-1) 
+            {
+                int index = dataGridView1.CurrentCell.RowIndex;
+                orders2[index].OrderStatus = (OrderStatus)comboBox_Status.Items[comboBox_Status.SelectedIndex];
+            }
         }
     }
 }

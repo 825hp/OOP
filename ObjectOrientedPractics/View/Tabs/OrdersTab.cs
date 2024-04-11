@@ -21,10 +21,7 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             
             InitializeComponent();
-            foreach (OrderStatus c in Enum.GetValues(typeof(OrderStatus)))
-            {
-                comboBox_Status.Items.Add(c);
-            }
+            
         }
         public void addToTable()
         {
@@ -62,6 +59,10 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             if (orders2.Count-1 >= dataGridView1.CurrentCell.RowIndex)
             {
+                foreach (OrderStatus c in Enum.GetValues(typeof(OrderStatus)))
+                {
+                    comboBox_Status.Items.Add(c);
+                }
                 int index = dataGridView1.CurrentCell.RowIndex;
                 textBox_ID.Text = orders2[index].Id.ToString();
                 comboBox_Status.Text = orders2[index].OrderStatus.ToString();

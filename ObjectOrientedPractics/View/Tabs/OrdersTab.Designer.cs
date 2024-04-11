@@ -82,6 +82,7 @@
             this.comboBox_Status.Name = "comboBox_Status";
             this.comboBox_Status.Size = new System.Drawing.Size(100, 21);
             this.comboBox_Status.TabIndex = 19;
+            this.comboBox_Status.SelectedIndexChanged += new System.EventHandler(this.comboBox_Status_SelectedIndexChanged);
             // 
             // textBoxCreated
             // 

@@ -12,7 +12,7 @@ namespace ObjectOrientedPractics.Model
         private readonly int _id = _count++;
         DateTime _date;
         OrderStatus _orderStatus = 0;
-        Address _address = new Address();
+        Address _address;
         Cart _cart = new Cart();
         string fullname;
 

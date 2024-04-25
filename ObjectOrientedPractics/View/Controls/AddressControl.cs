@@ -84,6 +84,7 @@ namespace ObjectOrientedPractics.View.Controls
             }
 
         }
+
         public Address SetAddress
         {
             set

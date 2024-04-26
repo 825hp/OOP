@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ObjectOrientedPractics.Model;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace ObjectOrientedPractics.View.Tabs
@@ -21,10 +23,28 @@ namespace ObjectOrientedPractics.View.Tabs
         private List<Item> itemsInCart = new List<Item>();
         public static List<Item> _items { get; set; }
         private List<Item> items2 = new List<Item>();
+        string[] timeIntervals = new string[]
+        {
+            "09:00 - 11:00",
+            "11:00 - 13:00",
+            "13:00 - 15:00",
+            "15:00 - 17:00",
+            "17:00 - 19:00",
+            "19:00 - 21:00"
+        };
         public CartsTab()
         {
             InitializeComponent();
-            
+            comboBox_PRTime.Items.AddRange(timeIntervals);
+            for (int i=1; i<5; i++)
+            {
+                DateTime currentDate = DateTime.Now;
+                currentDate = currentDate.AddDays(i);
+                string dayMonthString = currentDate.ToString("dd.MM.yyyy"); // Используем формат "dd.MM.yyyy"
+
+                comboBox_PRDate.Items.Add(dayMonthString);
+
+            }
         }
 
         private void button_AddToCart_Click(object sender, EventArgs e)
@@ -54,6 +74,8 @@ namespace ObjectOrientedPractics.View.Tabs
         public void update_combo()
         {
             {
+                comboBox_PRDate.SelectedIndex = 0;
+                comboBox_PRTime.SelectedIndex = 0;
                 items2.Clear();
                 for (int i = 0; i < ItemsTab._items.Count; i++)
                 {
@@ -77,11 +99,26 @@ namespace ObjectOrientedPractics.View.Tabs
         }
         public void comboBox_Customers_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (customers2[comboBox_Customers.SelectedIndex].Priority == true)
+            {
+                comboBox_PRDate.Visible = true;
+                comboBox_PRTime.Visible = true;
+                label_PRDate.Visible = true;
+                label_PRTime.Visible = true;
+            }
+            else
+            {
+                comboBox_PRDate.Visible = false;
+                comboBox_PRTime.Visible = false;
+                label_PRDate.Visible = false;
+                label_PRTime.Visible = false;
+            }
             update_combo();
             clearCart();
         }
         private void clearCart()
         {
+            
             listBox_Cart.Items.Clear();
             itemsInCart.Clear();
             label_Amount.Text = "0 RUB";
@@ -114,8 +151,18 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             if (listBox_Cart.Items.Count!=0)
             {
-                
                 Order newOrder = new Order();
+                
+                if (customers2[comboBox_Customers.SelectedIndex].Priority == true)
+                {
+                    string time2 = comboBox_PRTime.Text;
+                    string format = "dd.MM.yyyy";
+                    string dayMonthYearString = comboBox_PRDate.Text;
+                    DateTime date = DateTime.ParseExact(dayMonthYearString, format, CultureInfo.InvariantCulture, DateTimeStyles.None);
+                    newOrder = new PriorityOrder(date, time2);
+                }
+
+
                 
                 for (int i = 0; i < itemsInCart.Count; i++)
                 {
@@ -134,6 +181,10 @@ namespace ObjectOrientedPractics.View.Tabs
                 orders.Add(newOrder);
                 
                 clearCart();
+                comboBox_PRDate.Visible = false;
+                comboBox_PRTime.Visible = false;
+                label_PRDate.Visible = false;
+                label_PRTime.Visible = false;
             }
         }
     }

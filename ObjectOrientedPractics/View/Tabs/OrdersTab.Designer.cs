@@ -50,6 +50,11 @@
             this.grid_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_date_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox_PRTime = new System.Windows.Forms.TextBox();
+            this.textBox_PRDate = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,6 +62,11 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.textBox_PRDate);
+            this.panel1.Controls.Add(this.textBox_PRTime);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.comboBox_Status);
             this.panel1.Controls.Add(this.textBoxCreated);
             this.panel1.Controls.Add(this.textBox_ID);
@@ -255,6 +265,49 @@
             this.grid_amount.Name = "grid_amount";
             this.grid_amount.ReadOnly = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(610, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 13);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Priority Options";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(610, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(33, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Time:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(610, 53);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(33, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Date:";
+            // 
+            // textBox_PRTime
+            // 
+            this.textBox_PRTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_PRTime.Location = new System.Drawing.Point(649, 28);
+            this.textBox_PRTime.Name = "textBox_PRTime";
+            this.textBox_PRTime.Size = new System.Drawing.Size(100, 20);
+            this.textBox_PRTime.TabIndex = 21;
+            // 
+            // textBox_PRDate
+            // 
+            this.textBox_PRDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_PRDate.Location = new System.Drawing.Point(649, 50);
+            this.textBox_PRDate.Name = "textBox_PRDate";
+            this.textBox_PRDate.Size = new System.Drawing.Size(100, 20);
+            this.textBox_PRDate.TabIndex = 22;
+            // 
             // OrdersTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,5 +348,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_address;
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_date_order;
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_amount;
+        private System.Windows.Forms.TextBox textBox_PRDate;
+        private System.Windows.Forms.TextBox textBox_PRTime;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }

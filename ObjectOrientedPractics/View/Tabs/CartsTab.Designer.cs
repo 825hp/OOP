@@ -43,6 +43,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_AddToCart = new System.Windows.Forms.Button();
             this.listBox_Items = new System.Windows.Forms.ListBox();
+            this.comboBox_PRDate = new System.Windows.Forms.ComboBox();
+            this.comboBox_PRTime = new System.Windows.Forms.ComboBox();
+            this.label_PRDate = new System.Windows.Forms.Label();
+            this.label_PRTime = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,6 +63,10 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label_PRTime);
+            this.panel3.Controls.Add(this.label_PRDate);
+            this.panel3.Controls.Add(this.comboBox_PRTime);
+            this.panel3.Controls.Add(this.comboBox_PRDate);
             this.panel3.Controls.Add(this.listBox_Cart);
             this.panel3.Controls.Add(this.buttonClearCart);
             this.panel3.Controls.Add(this.button_RemoveItem);
@@ -76,14 +84,14 @@
             // listBox_Cart
             // 
             this.listBox_Cart.FormattingEnabled = true;
-            this.listBox_Cart.Location = new System.Drawing.Point(3, 84);
+            this.listBox_Cart.Location = new System.Drawing.Point(3, 136);
             this.listBox_Cart.Name = "listBox_Cart";
             this.listBox_Cart.Size = new System.Drawing.Size(315, 160);
             this.listBox_Cart.TabIndex = 9;
             // 
             // buttonClearCart
             // 
-            this.buttonClearCart.Location = new System.Drawing.Point(220, 294);
+            this.buttonClearCart.Location = new System.Drawing.Point(220, 346);
             this.buttonClearCart.Name = "buttonClearCart";
             this.buttonClearCart.Size = new System.Drawing.Size(98, 38);
             this.buttonClearCart.TabIndex = 8;
@@ -93,7 +101,7 @@
             // 
             // button_RemoveItem
             // 
-            this.button_RemoveItem.Location = new System.Drawing.Point(116, 294);
+            this.button_RemoveItem.Location = new System.Drawing.Point(116, 346);
             this.button_RemoveItem.Name = "button_RemoveItem";
             this.button_RemoveItem.Size = new System.Drawing.Size(98, 38);
             this.button_RemoveItem.TabIndex = 7;
@@ -103,7 +111,7 @@
             // 
             // button_CreateOrder
             // 
-            this.button_CreateOrder.Location = new System.Drawing.Point(3, 294);
+            this.button_CreateOrder.Location = new System.Drawing.Point(3, 346);
             this.button_CreateOrder.Name = "button_CreateOrder";
             this.button_CreateOrder.Size = new System.Drawing.Size(98, 38);
             this.button_CreateOrder.TabIndex = 6;
@@ -115,7 +123,7 @@
             // 
             this.label_Amount.AutoSize = true;
             this.label_Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Amount.Location = new System.Drawing.Point(3, 267);
+            this.label_Amount.Location = new System.Drawing.Point(3, 319);
             this.label_Amount.Name = "label_Amount";
             this.label_Amount.Size = new System.Drawing.Size(68, 24);
             this.label_Amount.TabIndex = 5;
@@ -125,7 +133,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(3, 254);
+            this.label4.Location = new System.Drawing.Point(3, 306);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 4;
@@ -134,7 +142,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 68);
+            this.label3.Location = new System.Drawing.Point(3, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 13);
             this.label3.TabIndex = 2;
@@ -198,6 +206,44 @@
             this.listBox_Items.Size = new System.Drawing.Size(261, 446);
             this.listBox_Items.TabIndex = 0;
             // 
+            // comboBox_PRDate
+            // 
+            this.comboBox_PRDate.FormattingEnabled = true;
+            this.comboBox_PRDate.Location = new System.Drawing.Point(6, 78);
+            this.comboBox_PRDate.Name = "comboBox_PRDate";
+            this.comboBox_PRDate.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_PRDate.TabIndex = 10;
+            this.comboBox_PRDate.Visible = false;
+            // 
+            // comboBox_PRTime
+            // 
+            this.comboBox_PRTime.FormattingEnabled = true;
+            this.comboBox_PRTime.Location = new System.Drawing.Point(155, 78);
+            this.comboBox_PRTime.Name = "comboBox_PRTime";
+            this.comboBox_PRTime.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_PRTime.TabIndex = 11;
+            this.comboBox_PRTime.Visible = false;
+            // 
+            // label_PRDate
+            // 
+            this.label_PRDate.AutoSize = true;
+            this.label_PRDate.Location = new System.Drawing.Point(3, 62);
+            this.label_PRDate.Name = "label_PRDate";
+            this.label_PRDate.Size = new System.Drawing.Size(33, 13);
+            this.label_PRDate.TabIndex = 12;
+            this.label_PRDate.Text = "Date:";
+            this.label_PRDate.Visible = false;
+            // 
+            // label_PRTime
+            // 
+            this.label_PRTime.AutoSize = true;
+            this.label_PRTime.Location = new System.Drawing.Point(152, 62);
+            this.label_PRTime.Name = "label_PRTime";
+            this.label_PRTime.Size = new System.Drawing.Size(33, 13);
+            this.label_PRTime.TabIndex = 13;
+            this.label_PRTime.Text = "Time:";
+            this.label_PRTime.Visible = false;
+            // 
             // CartsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,5 +277,9 @@
         private System.Windows.Forms.Button button_RemoveItem;
         private System.Windows.Forms.Button button_CreateOrder;
         private System.Windows.Forms.ListBox listBox_Cart;
+        private System.Windows.Forms.Label label_PRTime;
+        private System.Windows.Forms.Label label_PRDate;
+        private System.Windows.Forms.ComboBox comboBox_PRTime;
+        private System.Windows.Forms.ComboBox comboBox_PRDate;
     }
 }

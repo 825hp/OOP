@@ -20,7 +20,7 @@ namespace ObjectOrientedPractics.Model
         //private List<Order> _order = new List<Order>();
         private string _fullname;
         private Address _address;
-
+        public bool Priority = false;
         ValueValidator Validator = new ValueValidator();
 
         /// <summary>

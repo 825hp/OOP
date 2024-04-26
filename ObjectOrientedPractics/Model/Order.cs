@@ -18,7 +18,7 @@ namespace ObjectOrientedPractics.Model
 
         //public Order(DateTime date, Address address, Cart cart)
         //{
-        //    Cart2 = cart;
+        //    Cart = cart;
         //    Date = date;
         //    Address = address;
         //}

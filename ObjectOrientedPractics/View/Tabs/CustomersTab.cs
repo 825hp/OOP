@@ -59,13 +59,20 @@ namespace ObjectOrientedPractics.View.Tabs
                         
                         throw;
                     }
-
-
+                    if (checkBox_IsPriority.Checked == true)
+                    {
+                        _customers[index].Priority = true;
+                    }
+                    else
+                    {
+                        _customers[index].Priority = false;
+                    }
+                    
                     listBox_Customers.Items[index] = _fullname;
                     textBox_FullName.ReadOnly = true;
                     
                     textBox_FullName.BackColor = Color.White;
-                    
+                    checkBox_IsPriority.Checked = false;
                 }
 
 
@@ -95,6 +102,7 @@ namespace ObjectOrientedPractics.View.Tabs
                 int index = listBox_Customers.SelectedIndex;
                 if (index != -1)
                 {
+                    checkBox_IsPriority.Checked = false;
                     _customers.RemoveAt(index);
                     listBox_Customers.Items.RemoveAt(index);
                     ClearInputs();
@@ -117,8 +125,16 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             if (listBox_Customers.SelectedIndex != -1)
             {
+                
                 int index = listBox_Customers.SelectedIndex;
-
+                if(_customers[index].Priority == true)
+                {
+                    checkBox_IsPriority.Checked = true;
+                }
+                else
+                {
+                    checkBox_IsPriority.Checked = false;
+                }
                 textBox_FullName.ReadOnly = false;
 
                 addressControl1.SetAddress = _customers[index].Address;

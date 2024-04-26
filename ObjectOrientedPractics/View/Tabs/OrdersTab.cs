@@ -59,12 +59,23 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             if (orders2.Count-1 >= dataGridView1.CurrentCell.RowIndex)
             {
+                
                 comboBox_Status.Items.Clear();
                 foreach (OrderStatus c in Enum.GetValues(typeof(OrderStatus)))
                 {
                     comboBox_Status.Items.Add(c);
                 }
                 int index = dataGridView1.CurrentCell.RowIndex;
+                if (orders2[index] is PriorityOrder priority)
+                {
+                    textBox_PRDate.Text = priority.DateTime.ToString();
+                    textBox_PRTime.Text = priority.time_Interval;
+                }
+                else
+                {
+                    textBox_PRDate.Text = "none";
+                    textBox_PRTime.Text = "none";
+                }
                 textBox_ID.Text = orders2[index].Id.ToString();
                 comboBox_Status.Text = orders2[index].OrderStatus.ToString();
                 textBoxCreated.Text = orders2[index].Date.ToString();

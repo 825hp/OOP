@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using ObjectOrientedPractics.Model;
-
+using ObjectOrientedPractics.Model.Enums;
 
 namespace ObjectOrientedPractics.View.Tabs
 {

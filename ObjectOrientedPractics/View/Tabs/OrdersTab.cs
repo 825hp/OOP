@@ -10,7 +10,8 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ObjectOrientedPractics.Model.Orders;
+using ObjectOrientedPractics.Model.Enums;
 namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class OrdersTab : UserControl

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using ObjectOrientedPractics.Model;
+using ObjectOrientedPractics.Model.Discounts;
+using ObjectOrientedPractics.Model.Enums;
 using ObjectOrientedPractics.View.Controls;
 namespace ObjectOrientedPractics.View.Tabs
 {
@@ -130,6 +132,47 @@ namespace ObjectOrientedPractics.View.Tabs
                 
                 
                 label_Error.Visible = false;
+            }
+        }
+
+        private void discountAddButton_Click(object sender, EventArgs e)
+        {
+            if (listBox_Customers.SelectedIndex != -1)
+            {
+                var form = new AddDiscountForm();
+                var result = form.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    int index = listBox_Customers.SelectedIndex;
+                    Category category = form.Category;
+                    _customers[index].Discounts.Add(new PercentDiscount(category));
+
+                    discountListBox.Items.Clear();
+                    for (int i = 0; i < _customers[index].Discounts.Count; i++)
+                    {
+                        discountListBox.Items.Add(_customers[index].Discounts[i].Info);
+                    }
+
+
+                }
+            }
+            
+        }
+
+        private void removeDiscountButton_Click(object sender, EventArgs e)
+        {
+            if (listBox_Customers.SelectedIndex != -1)
+            {
+                if (discountListBox.SelectedIndex != 0)
+                {
+                    _customers[listBox_Customers.SelectedIndex].Discounts.RemoveAt(discountListBox.SelectedIndex);
+                    discountListBox.Items.Clear();
+                    for (int i = 0; i < _customers[listBox_Customers.SelectedIndex].Discounts.Count; i++)
+                    {
+                        discountListBox.Items.Add(_customers[listBox_Customers.SelectedIndex].Discounts[i].Info);
+                    }
+                }
             }
         }
     }

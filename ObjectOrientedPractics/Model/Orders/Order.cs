@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace ObjectOrientedPractics.Model
+using ObjectOrientedPractics.Model.Enums;
+namespace ObjectOrientedPractics.Model.Orders
 {
     public class Order
     {
@@ -15,13 +15,29 @@ namespace ObjectOrientedPractics.Model
         Address _address;
         Cart _cart = new Cart();
         string fullname;
-
+        private double _discountAmount;
+        private double _totalPrice;
         //public Order(DateTime date, Address address, Cart cart)
         //{
         //    Cart2 = cart;
         //    Date = date;
         //    Address = address;
         //}
+        public double Total()
+        {
+            return _cart.Amount - DiscountAmount;
+        }
+        public double DiscountAmount
+        {
+            get
+            {
+                return _discountAmount;
+            }
+            set
+            {
+                _discountAmount = value;
+            }
+        }
         public Cart Cart
         {
             get { return _cart; }

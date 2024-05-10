@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ObjectOrientedPractics.Model;
 using static System.Net.Mime.MediaTypeNames;
-
-
+using ObjectOrientedPractics.Model.Orders;
+using ObjectOrientedPractics.Model.Enums;
 namespace ObjectOrientedPractics.View.Tabs
 {
     public partial class CartsTab : UserControl
@@ -21,6 +21,7 @@ namespace ObjectOrientedPractics.View.Tabs
         private List<Item> itemsInCart = new List<Item>();
         public static List<Item> _items { get; set; }
         private List<Item> items2 = new List<Item>();
+        double totalDiscount;
         public CartsTab()
         {
             InitializeComponent();
@@ -29,8 +30,10 @@ namespace ObjectOrientedPractics.View.Tabs
 
         private void button_AddToCart_Click(object sender, EventArgs e)
         {
+            updateDiscount();
             if (listBox_Items.SelectedIndex != -1)
             {
+                
                 //textBox_Cart.Text += listBox_Items.SelectedItem.ToString()+ "\r\n";
                 listBox_Cart.Items.Add(listBox_Items.SelectedItem);
                 itemsInCart.Add(items2[listBox_Items.SelectedIndex]);
@@ -77,8 +80,14 @@ namespace ObjectOrientedPractics.View.Tabs
         }
         public void comboBox_Customers_SelectedIndexChanged(object sender, EventArgs e)
         {
+            discountCheckedListBox.Items.Clear();
             update_combo();
             clearCart();
+            for (int i = 0; i < customers2[comboBox_Customers.SelectedIndex].Discounts.Count; i++)
+            {
+                discountCheckedListBox.Items.Add(customers2[comboBox_Customers.SelectedIndex].Discounts[i].Info);
+                discountCheckedListBox.SetItemChecked(i, true);
+            }
         }
         private void clearCart()
         {
@@ -123,7 +132,16 @@ namespace ObjectOrientedPractics.View.Tabs
                     Item itemOfCart = itemsInCart[i];
                     newOrder.Cart.Items3.Add(itemOfCart);
                 }
-                
+                newOrder.DiscountAmount = totalDiscount;
+                for (int i = 0; i < discountCheckedListBox.Items.Count; i++)
+                {
+
+                    if (discountCheckedListBox.GetItemChecked(i))
+                    {
+                        customers2[comboBox_Customers.SelectedIndex].Discounts[i].Apply(itemsInCart);
+                        customers2[comboBox_Customers.SelectedIndex].Discounts[i].Update(itemsInCart);
+                    }
+                }
                 newOrder.Date = DateTime.Now;
                 newOrder.Address = customers2[comboBox_Customers.SelectedIndex].Address;
                 newOrder.OrderStatus = (OrderStatus)0;
@@ -132,9 +150,36 @@ namespace ObjectOrientedPractics.View.Tabs
                 double current = Double.Parse(current1);
                 newOrder.Cart.Amount = current;
                 orders.Add(newOrder);
-                
+                discountCheckedListBox.Items.Clear();
+                updateDiscount();
                 clearCart();
             }
+        }
+        private void updateDiscount()
+        {
+           
+            totalDiscount = 0;
+            string current1 = label_Amount.Text.Trim(new Char[] { 'R', 'U', 'B' });
+            double current = Double.Parse(current1);
+            for (int i = 0; i < discountCheckedListBox.Items.Count; i++)
+            {
+
+                if (discountCheckedListBox.GetItemChecked(i))
+                {
+                    totalDiscount += customers2[comboBox_Customers.SelectedIndex].Discounts[i].Calculate(itemsInCart);
+                }
+            }
+            discountAmountLabel.Text = totalDiscount.ToString();
+            TotalLabel.Text = (current - totalDiscount).ToString();
+        }
+        private void discountCheckedListBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            updateDiscount();
+        }
+
+        private void discountCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            updateDiscount();
         }
     }
 }

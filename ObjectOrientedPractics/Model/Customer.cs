@@ -5,7 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using ObjectOrientedPractics.Services;
-
+using ObjectOrientedPractics.Model.Discounts;
 
 namespace ObjectOrientedPractics.Model
 {
@@ -20,9 +20,14 @@ namespace ObjectOrientedPractics.Model
         //private List<Order> _order = new List<Order>();
         private string _fullname;
         private Address _address;
-
+        private List<IDiscount> _discounts;
         ValueValidator Validator = new ValueValidator();
+        public List<IDiscount> Discounts
+        {
+            get { return _discounts; }
 
+            set { _discounts = value; }
+        }
         /// <summary>
         /// Конструктор класса
         /// </summary>
@@ -31,8 +36,11 @@ namespace ObjectOrientedPractics.Model
         /// <param name="address">Адрес</param>
         public Customer(string fullname, Address address)
         {
+            
             Fullname = fullname;
             Address = address;
+            Discounts = new List<IDiscount>();
+            Discounts.Add(new PointsDiscount());
         }
 
         //public List<Order> Order

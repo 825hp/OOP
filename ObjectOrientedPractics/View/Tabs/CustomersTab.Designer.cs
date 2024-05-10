@@ -44,7 +44,11 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button_Remove = new System.Windows.Forms.Button();
             this.button_Add = new System.Windows.Forms.Button();
+            this.label_Discounts = new System.Windows.Forms.Label();
+            this.discountAddButton = new System.Windows.Forms.Button();
+            this.removeDiscountButton = new System.Windows.Forms.Button();
             this.addressControl1 = new ObjectOrientedPractics.View.Controls.AddressControl();
+            this.discountListBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -82,6 +86,10 @@
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel5.Controls.Add(this.discountListBox);
+            this.panel5.Controls.Add(this.removeDiscountButton);
+            this.panel5.Controls.Add(this.discountAddButton);
+            this.panel5.Controls.Add(this.label_Discounts);
             this.panel5.Controls.Add(this.addressControl1);
             this.panel5.Controls.Add(this.label_Error);
             this.panel5.Controls.Add(this.textBox_FullName);
@@ -91,7 +99,7 @@
             this.panel5.Controls.Add(this.label2);
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(422, 334);
+            this.panel5.Size = new System.Drawing.Size(422, 422);
             this.panel5.TabIndex = 0;
             // 
             // label_Error
@@ -157,9 +165,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Location = new System.Drawing.Point(3, 343);
+            this.panel4.Location = new System.Drawing.Point(3, 431);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(422, 195);
+            this.panel4.Size = new System.Drawing.Size(422, 107);
             this.panel4.TabIndex = 1;
             // 
             // panel2
@@ -235,19 +243,57 @@
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
+            // label_Discounts
+            // 
+            this.label_Discounts.AutoSize = true;
+            this.label_Discounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Discounts.Location = new System.Drawing.Point(3, 230);
+            this.label_Discounts.Name = "label_Discounts";
+            this.label_Discounts.Size = new System.Drawing.Size(63, 13);
+            this.label_Discounts.TabIndex = 1;
+            this.label_Discounts.Text = "Discounts";
+            // 
+            // discountAddButton
+            // 
+            this.discountAddButton.Location = new System.Drawing.Point(289, 246);
+            this.discountAddButton.Name = "discountAddButton";
+            this.discountAddButton.Size = new System.Drawing.Size(85, 40);
+            this.discountAddButton.TabIndex = 8;
+            this.discountAddButton.Text = "Add";
+            this.discountAddButton.UseVisualStyleBackColor = true;
+            this.discountAddButton.Click += new System.EventHandler(this.discountAddButton_Click);
+            // 
+            // removeDiscountButton
+            // 
+            this.removeDiscountButton.Location = new System.Drawing.Point(289, 292);
+            this.removeDiscountButton.Name = "removeDiscountButton";
+            this.removeDiscountButton.Size = new System.Drawing.Size(85, 40);
+            this.removeDiscountButton.TabIndex = 9;
+            this.removeDiscountButton.Text = "Remove";
+            this.removeDiscountButton.UseVisualStyleBackColor = true;
+            this.removeDiscountButton.Click += new System.EventHandler(this.removeDiscountButton_Click);
+            // 
             // addressControl1
             // 
             this.addressControl1.Location = new System.Drawing.Point(3, 103);
             this.addressControl1.Name = "addressControl1";
-            this.addressControl1.Size = new System.Drawing.Size(406, 228);
+            this.addressControl1.Size = new System.Drawing.Size(406, 124);
             this.addressControl1.TabIndex = 6;
             // 
-            // Customers
+            // discountListBox
+            // 
+            this.discountListBox.FormattingEnabled = true;
+            this.discountListBox.Location = new System.Drawing.Point(6, 246);
+            this.discountListBox.Name = "discountListBox";
+            this.discountListBox.Size = new System.Drawing.Size(277, 108);
+            this.discountListBox.TabIndex = 10;
+            // 
+            // CustomersTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "Customers";
+            this.Name = "CustomersTab";
             this.Size = new System.Drawing.Size(752, 635);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -279,5 +325,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_Error;
         private Controls.AddressControl addressControl1;
+        private System.Windows.Forms.Label label_Discounts;
+        private System.Windows.Forms.Button removeDiscountButton;
+        private System.Windows.Forms.Button discountAddButton;
+        private System.Windows.Forms.ListBox discountListBox;
     }
 }

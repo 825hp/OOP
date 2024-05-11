@@ -44,7 +44,7 @@ namespace ObjectOrientedPractics.View.Tabs
                     row.Cells[3].Value = orders2[i].Address.City + ", " + orders2[i].Address.Street + ", " + orders2[i].Address.Building;
                     row.Cells[4].Value = orders2[i].Date;
                     row.Cells[5].Value = orders2[i].Cart.Amount;
-                    
+                    row.Cells[6].Value = orders2[i].TotalPrice;
 
                     dataGridView1.Rows.Add(row);
                 }
@@ -66,6 +66,7 @@ namespace ObjectOrientedPractics.View.Tabs
                     comboBox_Status.Items.Add(c);
                 }
                 int index = dataGridView1.CurrentCell.RowIndex;
+                label_Total.Text = orders2[index].TotalPrice.ToString();
                 textBox_ID.Text = orders2[index].Id.ToString();
                 comboBox_Status.Text = orders2[index].OrderStatus.ToString();
                 textBoxCreated.Text = orders2[index].Date.ToString();

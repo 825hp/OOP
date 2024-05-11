@@ -50,6 +50,9 @@
             this.grid_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_date_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label_Total = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,6 +60,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label_Total);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.comboBox_Status);
             this.panel1.Controls.Add(this.textBoxCreated);
             this.panel1.Controls.Add(this.textBox_ID);
@@ -210,7 +215,8 @@
             this.grid_name_customer,
             this.grid_address,
             this.grid_date_order,
-            this.grid_amount});
+            this.grid_amount,
+            this.Total});
             this.dataGridView1.Location = new System.Drawing.Point(3, 17);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -255,6 +261,32 @@
             this.grid_amount.Name = "grid_amount";
             this.grid_amount.ReadOnly = true;
             // 
+            // Total
+            // 
+            this.Total.HeaderText = "Total";
+            this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(536, 461);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 20);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Total:";
+            // 
+            // label_Total
+            // 
+            this.label_Total.AutoSize = true;
+            this.label_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Total.Location = new System.Drawing.Point(549, 479);
+            this.label_Total.Name = "label_Total";
+            this.label_Total.Size = new System.Drawing.Size(21, 24);
+            this.label_Total.TabIndex = 21;
+            this.label_Total.Text = "0";
+            // 
             // OrdersTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,5 +327,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_address;
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_date_order;
         private System.Windows.Forms.DataGridViewTextBoxColumn grid_amount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        private System.Windows.Forms.Label label_Total;
+        private System.Windows.Forms.Label label8;
     }
 }

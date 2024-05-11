@@ -23,6 +23,17 @@ namespace ObjectOrientedPractics.Model.Orders
         //    Date = date;
         //    Address = address;
         //}
+        public double TotalPrice
+        {
+            get
+            {
+                return _totalPrice;
+            }
+            set
+            {
+                _totalPrice = value;
+            }
+        }
         public double Total()
         {
             return _cart.Amount - DiscountAmount;

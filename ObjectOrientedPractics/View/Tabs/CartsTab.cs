@@ -30,7 +30,7 @@ namespace ObjectOrientedPractics.View.Tabs
 
         private void button_AddToCart_Click(object sender, EventArgs e)
         {
-            updateDiscount();
+            
             if (listBox_Items.SelectedIndex != -1)
             {
                 
@@ -42,6 +42,7 @@ namespace ObjectOrientedPractics.View.Tabs
                 label_Amount.Text = current.ToString()+" RUB";
 
             }
+            updateDiscount();
         }
 
         
@@ -97,11 +98,14 @@ namespace ObjectOrientedPractics.View.Tabs
         }
         private void buttonClearCart_Click(object sender, EventArgs e)
         {
+            
             clearCart();
+            updateDiscount();
         }
 
         private void button_RemoveItem_Click(object sender, EventArgs e)
         {
+            updateDiscount();
             if (listBox_Cart.SelectedIndex != -1)
             {
                 itemsInCart.Remove(itemsInCart[listBox_Cart.SelectedIndex]);
@@ -142,6 +146,7 @@ namespace ObjectOrientedPractics.View.Tabs
                         customers2[comboBox_Customers.SelectedIndex].Discounts[i].Update(itemsInCart);
                     }
                 }
+                newOrder.TotalPrice = double.Parse(TotalLabel.Text);
                 newOrder.Date = DateTime.Now;
                 newOrder.Address = customers2[comboBox_Customers.SelectedIndex].Address;
                 newOrder.OrderStatus = (OrderStatus)0;
